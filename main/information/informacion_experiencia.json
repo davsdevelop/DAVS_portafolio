@@ -1,0 +1,59 @@
+{
+    "experiencia_1": {
+        "titulo": "Desarrollador Backend AI",
+        "subtitulo": "APIUX - FACTORY AI",
+        "fecha_inicio": "Mayo - 2025",
+        "fecha_fin": "Febrero - 2026",
+        "descripcion": [
+            "Implementación de arquitecturas backend modernas enfocadas en la orquestación de agentes de IA.",
+            "Diseño y despliegue de APIs de alto rendimiento con FastAPI.",
+            "Integración directa de modelos LLM para procesamiento de lenguaje natural y generación dinámica."
+        ],
+        "imagen": "/imagenes/experiencia/Experiencia_laboral_FactoryAI.jpg"
+    },
+    "experiencia_2": {
+        "titulo": "Ingeniero de Integración Middleware",
+        "subtitulo": "APIUX - COOPEUCH",
+        "fecha_inicio": "Enero - 2023",
+        "fecha_fin": "Mayo - 2025",
+        "descripcion": [
+            "Lideré la modernización de servicios transaccionales críticos usando Apache Camel y JBoss Fuse.",
+            "Integré sistemas legados con ecosistemas Cloud (AWS) mediante mensajería asíncrona.",
+            "Desarrollé microservicios escalables en Node.js (NestJS) para expansión de capacidades backend."
+        ],
+        "imagen": "/imagenes/experiencia/Experiencia_laboral_coopeuch.jpg"
+    },
+    "experiencia_3": {
+        "titulo": "Especialista en Integración",
+        "subtitulo": "SOAINT - TRANSELEC",
+        "fecha_inicio": "Diciembre - 2022",
+        "fecha_fin": "Enero - 2023",
+        "descripcion": [
+            "Modernización de la capa de integración para sistemas críticos del sector energético.",
+            "Implementación de Patrones de Integración Empresarial (EIP) para asegurar escalabilidad."
+        ],
+        "imagen": "/imagenes/experiencia/Experiencia_laboral_transelec.jpg"
+    },
+    "experiencia_4": {
+        "titulo": "Consultor IoT y Visión Artificial",
+        "subtitulo": "FREELANCE",
+        "fecha_inicio": "Enero - 2020",
+        "fecha_fin": "Enero - 2023",
+        "descripcion": [
+            "Visión Artificial (Agro): Sistema inteligente en Python y OpenCV para detección de mermas en cranberries, automatizando el control de calidad.",
+            "Ecosistemas IoT: Conectividad en tiempo real de dispositivos industriales a la nube vía MQTT y microservicios personalizados."
+        ],
+        "imagen": "/imagenes/experiencia/Experiencia_laboral_freelance.jpg"
+    },
+    "experiencia_5": {
+        "titulo": "Especialista Técnico en Equipamiento Médico",
+        "subtitulo": "Equipos Médicos Zepeda",
+        "fecha_inicio": "Junio - 2018",
+        "fecha_fin": "Octubre - 2021",
+        "descripcion": [
+            "Diseño de sistemas de control automatizados para optimizar el flujo de reparaciones técnicas.",
+            "Liderazgo y mentoría de proyectos tecnológicos para alumnos en práctica profesional."
+        ],
+        "imagen": "/imagenes/experiencia/Experiencia_laboral_zepeda.jpg"
+    }
+}

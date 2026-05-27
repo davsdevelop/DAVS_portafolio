@@ -1,0 +1,335 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <!--
+    Neural Network Background v2 — orgánico y denso
+    Color base: rgba(0,210,180,...) — reemplaza los 3 valores RGB por tu color
+    Sin fondo: transparente, ponle el color que quieras con CSS background-color
+    Uso: background-image: url('neural-background-v2.svg'); background-size: cover;
+  -->
+  <style>
+    .n  { fill: rgba(0,210,180,0.60); }
+    .nm { fill: rgba(0,210,180,0.35); }
+    .ns { fill: rgba(0,210,180,0.20); }
+    .nx { fill: rgba(0,210,180,0.12); }
+    .l  { stroke: rgba(0,210,180,0.12); stroke-width: 0.8; fill: none; }
+    .lf { stroke: rgba(0,210,180,0.06); stroke-width: 0.5; fill: none; }
+    .lm { stroke: rgba(0,210,180,0.09); stroke-width: 0.7; fill: none; }
+    .lb { stroke: rgba(0,210,180,0.16); stroke-width: 1;   fill: none; }
+  </style>
+
+  <!-- NODOS -->
+  <circle class="n"  cx="47"   cy="83"  r="5.5"/>
+  <circle class="nm" cx="132"  cy="44"  r="2.5"/>
+  <circle class="ns" cx="198"  cy="112" r="3.8"/>
+  <circle class="n"  cx="89"   cy="197" r="6.5"/>
+  <circle class="nx" cx="251"  cy="61"  r="1.8"/>
+  <circle class="nm" cx="310"  cy="148" r="3"/>
+  <circle class="ns" cx="163"  cy="260" r="2.2"/>
+  <circle class="n"  cx="370"  cy="52"  r="4.5"/>
+  <circle class="nx" cx="420"  cy="190" r="1.5"/>
+  <circle class="nm" cx="275"  cy="320" r="3.5"/>
+
+  <circle class="n"  cx="540"  cy="27"  r="5"/>
+  <circle class="nx" cx="620"  cy="110" r="1.8"/>
+  <circle class="nm" cx="710"  cy="58"  r="3.2"/>
+  <circle class="ns" cx="670"  cy="195" r="2.8"/>
+  <circle class="n"  cx="790"  cy="130" r="6"/>
+  <circle class="nx" cx="858"  cy="45"  r="1.5"/>
+  <circle class="nm" cx="910"  cy="175" r="3.8"/>
+  <circle class="ns" cx="760"  cy="280" r="2.5"/>
+
+  <circle class="n"  cx="1020" cy="35"  r="5.5"/>
+  <circle class="nm" cx="1110" cy="100" r="2.8"/>
+  <circle class="ns" cx="1185" cy="55"  r="2"/>
+  <circle class="n"  cx="1270" cy="140" r="7"/>
+  <circle class="nx" cx="1340" cy="65"  r="1.5"/>
+  <circle class="nm" cx="1380" cy="195" r="3.2"/>
+  <circle class="ns" cx="1140" cy="230" r="2.5"/>
+  <circle class="nx" cx="1060" cy="180" r="1.8"/>
+
+  <circle class="n"  cx="28"   cy="390" r="4"/>
+  <circle class="nm" cx="110"  cy="445" r="3.5"/>
+  <circle class="ns" cx="75"   cy="560" r="2.2"/>
+  <circle class="n"  cx="195"  cy="490" r="5.5"/>
+  <circle class="nx" cx="260"  cy="380" r="1.5"/>
+  <circle class="nm" cx="340"  cy="530" r="3"/>
+  <circle class="ns" cx="185"  cy="620" r="2.8"/>
+  <circle class="n"  cx="410"  cy="420" r="4.8"/>
+  <circle class="nx" cx="460"  cy="560" r="2"/>
+
+  <circle class="n"  cx="580"  cy="360" r="7"/>
+  <circle class="nm" cx="650"  cy="280" r="3.2"/>
+  <circle class="ns" cx="730"  cy="390" r="2.5"/>
+  <circle class="n"  cx="820"  cy="310" r="5.5"/>
+  <circle class="nm" cx="700"  cy="460" r="4"/>
+  <circle class="ns" cx="790"  cy="500" r="2.2"/>
+  <circle class="nx" cx="640"  cy="510" r="1.8"/>
+  <circle class="n"  cx="880"  cy="440" r="6"/>
+  <circle class="nm" cx="960"  cy="350" r="3.5"/>
+  <circle class="ns" cx="920"  cy="510" r="2.8"/>
+
+  <circle class="n"  cx="1070" cy="380" r="5"/>
+  <circle class="nm" cx="1160" cy="440" r="3.8"/>
+  <circle class="ns" cx="1250" cy="360" r="2.5"/>
+  <circle class="n"  cx="1330" cy="480" r="6.5"/>
+  <circle class="nx" cx="1390" cy="370" r="1.5"/>
+  <circle class="nm" cx="1140" cy="560" r="3"/>
+  <circle class="ns" cx="1280" cy="580" r="2.2"/>
+  <circle class="nx" cx="1050" cy="510" r="1.8"/>
+
+  <circle class="n"  cx="55"   cy="680" r="5"/>
+  <circle class="nm" cx="150"  cy="730" r="3.5"/>
+  <circle class="ns" cx="95"   cy="820" r="2.5"/>
+  <circle class="n"  cx="240"  cy="790" r="6"/>
+  <circle class="nx" cx="310"  cy="680" r="1.8"/>
+  <circle class="nm" cx="370"  cy="840" r="3.2"/>
+  <circle class="ns" cx="430"  cy="730" r="2.8"/>
+  <circle class="nx" cx="180"  cy="870" r="1.5"/>
+
+  <circle class="n"  cx="550"  cy="660" r="5.5"/>
+  <circle class="nm" cx="640"  cy="730" r="3.8"/>
+  <circle class="ns" cx="720"  cy="640" r="2.2"/>
+  <circle class="n"  cx="810"  cy="720" r="6.5"/>
+  <circle class="nx" cx="745"  cy="820" r="2"/>
+  <circle class="nm" cx="880"  cy="800" r="3.5"/>
+  <circle class="ns" cx="610"  cy="820" r="2.5"/>
+  <circle class="nx" cx="680"  cy="870" r="1.5"/>
+
+  <circle class="n"  cx="1010" cy="650" r="5"/>
+  <circle class="nm" cx="1110" cy="700" r="3.2"/>
+  <circle class="ns" cx="1210" cy="640" r="2.5"/>
+  <circle class="n"  cx="1300" cy="730" r="7"/>
+  <circle class="nx" cx="1380" cy="650" r="1.8"/>
+  <circle class="nm" cx="1170" cy="820" r="3.5"/>
+  <circle class="ns" cx="1060" cy="800" r="2.2"/>
+  <circle class="nx" cx="1340" cy="850" r="2"/>
+
+  <circle class="nx" cx="490"  cy="140" r="1.5"/>
+  <circle class="ns" cx="510"  cy="250" r="2.2"/>
+  <circle class="nx" cx="490"  cy="640" r="1.8"/>
+  <circle class="ns" cx="960"  cy="600" r="2.5"/>
+  <circle class="nx" cx="1000" cy="250" r="1.5"/>
+
+  <!-- LÍNEAS grupo A -->
+  <line class="lb" x1="47"  y1="83"  x2="132" y2="44"/>
+  <line class="l"  x1="47"  y1="83"  x2="198" y2="112"/>
+  <line class="l"  x1="47"  y1="83"  x2="89"  y2="197"/>
+  <line class="lf" x1="47"  y1="83"  x2="251" y2="61"/>
+  <line class="l"  x1="47"  y1="83"  x2="310" y2="148"/>
+  <line class="lf" x1="132" y1="44"  x2="251" y2="61"/>
+  <line class="l"  x1="132" y1="44"  x2="198" y2="112"/>
+  <line class="lf" x1="132" y1="44"  x2="370" y2="52"/>
+  <line class="l"  x1="198" y1="112" x2="89"  y2="197"/>
+  <line class="l"  x1="198" y1="112" x2="310" y2="148"/>
+  <line class="lf" x1="198" y1="112" x2="251" y2="61"/>
+  <line class="lb" x1="89"  y1="197" x2="163" y2="260"/>
+  <line class="l"  x1="89"  y1="197" x2="310" y2="148"/>
+  <line class="lf" x1="89"  y1="197" x2="275" y2="320"/>
+  <line class="l"  x1="251" y1="61"  x2="370" y2="52"/>
+  <line class="lf" x1="310" y1="148" x2="370" y2="52"/>
+  <line class="l"  x1="310" y1="148" x2="420" y2="190"/>
+  <line class="l"  x1="310" y1="148" x2="275" y2="320"/>
+  <line class="lf" x1="163" y1="260" x2="275" y2="320"/>
+  <line class="l"  x1="163" y1="260" x2="310" y2="148"/>
+  <line class="lf" x1="370" y1="52"  x2="420" y2="190"/>
+  <line class="l"  x1="420" y1="190" x2="275" y2="320"/>
+
+  <!-- LÍNEAS grupo B -->
+  <line class="lb" x1="540" y1="27"  x2="710" y2="58"/>
+  <line class="l"  x1="540" y1="27"  x2="620" y2="110"/>
+  <line class="lf" x1="540" y1="27"  x2="858" y2="45"/>
+  <line class="l"  x1="620" y1="110" x2="710" y2="58"/>
+  <line class="l"  x1="620" y1="110" x2="670" y2="195"/>
+  <line class="lf" x1="620" y1="110" x2="790" y2="130"/>
+  <line class="lb" x1="710" y1="58"  x2="790" y2="130"/>
+  <line class="l"  x1="710" y1="58"  x2="858" y2="45"/>
+  <line class="lf" x1="710" y1="58"  x2="670" y2="195"/>
+  <line class="l"  x1="670" y1="195" x2="790" y2="130"/>
+  <line class="l"  x1="670" y1="195" x2="760" y2="280"/>
+  <line class="lf" x1="670" y1="195" x2="910" y2="175"/>
+  <line class="lb" x1="790" y1="130" x2="910" y2="175"/>
+  <line class="l"  x1="790" y1="130" x2="858" y2="45"/>
+  <line class="l"  x1="790" y1="130" x2="760" y2="280"/>
+  <line class="lf" x1="858" y1="45"  x2="910" y2="175"/>
+  <line class="l"  x1="910" y1="175" x2="760" y2="280"/>
+
+  <!-- LÍNEAS grupo C -->
+  <line class="l"  x1="1020" y1="35"  x2="1110" y2="100"/>
+  <line class="lb" x1="1020" y1="35"  x2="1185" y2="55"/>
+  <line class="lf" x1="1020" y1="35"  x2="1340" y2="65"/>
+  <line class="l"  x1="1020" y1="35"  x2="1060" y2="180"/>
+  <line class="l"  x1="1110" y1="100" x2="1185" y2="55"/>
+  <line class="l"  x1="1110" y1="100" x2="1270" y2="140"/>
+  <line class="lf" x1="1110" y1="100" x2="1060" y2="180"/>
+  <line class="l"  x1="1185" y1="55"  x2="1340" y2="65"/>
+  <line class="lf" x1="1185" y1="55"  x2="1270" y2="140"/>
+  <line class="lb" x1="1270" y1="140" x2="1380" y2="195"/>
+  <line class="l"  x1="1270" y1="140" x2="1340" y2="65"/>
+  <line class="l"  x1="1270" y1="140" x2="1140" y2="230"/>
+  <line class="lf" x1="1270" y1="140" x2="1060" y2="180"/>
+  <line class="l"  x1="1340" y1="65"  x2="1380" y2="195"/>
+  <line class="l"  x1="1380" y1="195" x2="1140" y2="230"/>
+  <line class="lf" x1="1060" y1="180" x2="1140" y2="230"/>
+
+  <!-- LÍNEAS grupo D -->
+  <line class="l"  x1="28"  y1="390" x2="110" y2="445"/>
+  <line class="lf" x1="28"  y1="390" x2="75"  y2="560"/>
+  <line class="l"  x1="28"  y1="390" x2="260" y2="380"/>
+  <line class="lb" x1="110" y1="445" x2="195" y2="490"/>
+  <line class="l"  x1="110" y1="445" x2="75"  y2="560"/>
+  <line class="lf" x1="110" y1="445" x2="340" y2="530"/>
+  <line class="l"  x1="195" y1="490" x2="260" y2="380"/>
+  <line class="l"  x1="195" y1="490" x2="340" y2="530"/>
+  <line class="l"  x1="195" y1="490" x2="185" y2="620"/>
+  <line class="lf" x1="195" y1="490" x2="75"  y2="560"/>
+  <line class="l"  x1="260" y1="380" x2="410" y2="420"/>
+  <line class="lf" x1="260" y1="380" x2="340" y2="530"/>
+  <line class="lb" x1="75"  y1="560" x2="185" y2="620"/>
+  <line class="l"  x1="340" y1="530" x2="410" y2="420"/>
+  <line class="l"  x1="340" y1="530" x2="460" y2="560"/>
+  <line class="lf" x1="340" y1="530" x2="185" y2="620"/>
+  <line class="l"  x1="410" y1="420" x2="460" y2="560"/>
+
+  <!-- LÍNEAS grupo E (denso) -->
+  <line class="lb" x1="580" y1="360" x2="650" y2="280"/>
+  <line class="l"  x1="580" y1="360" x2="730" y2="390"/>
+  <line class="l"  x1="580" y1="360" x2="820" y2="310"/>
+  <line class="lf" x1="580" y1="360" x2="700" y2="460"/>
+  <line class="l"  x1="580" y1="360" x2="640" y2="510"/>
+  <line class="lf" x1="580" y1="360" x2="790" y2="500"/>
+  <line class="l"  x1="650" y1="280" x2="730" y2="390"/>
+  <line class="l"  x1="650" y1="280" x2="820" y2="310"/>
+  <line class="lf" x1="650" y1="280" x2="960" y2="350"/>
+  <line class="lb" x1="730" y1="390" x2="700" y2="460"/>
+  <line class="l"  x1="730" y1="390" x2="820" y2="310"/>
+  <line class="l"  x1="730" y1="390" x2="880" y2="440"/>
+  <line class="lf" x1="730" y1="390" x2="790" y2="500"/>
+  <line class="l"  x1="820" y1="310" x2="960" y2="350"/>
+  <line class="l"  x1="820" y1="310" x2="880" y2="440"/>
+  <line class="lf" x1="820" y1="310" x2="790" y2="500"/>
+  <line class="lb" x1="700" y1="460" x2="640" y2="510"/>
+  <line class="l"  x1="700" y1="460" x2="790" y2="500"/>
+  <line class="l"  x1="700" y1="460" x2="880" y2="440"/>
+  <line class="lf" x1="700" y1="460" x2="920" y2="510"/>
+  <line class="l"  x1="790" y1="500" x2="920" y2="510"/>
+  <line class="lf" x1="790" y1="500" x2="640" y2="510"/>
+  <line class="l"  x1="880" y1="440" x2="960" y2="350"/>
+  <line class="lb" x1="880" y1="440" x2="920" y2="510"/>
+  <line class="l"  x1="960" y1="350" x2="920" y2="510"/>
+
+  <!-- LÍNEAS grupo F -->
+  <line class="l"  x1="1070" y1="380" x2="1160" y2="440"/>
+  <line class="lb" x1="1070" y1="380" x2="1250" y2="360"/>
+  <line class="lf" x1="1070" y1="380" x2="1050" y2="510"/>
+  <line class="l"  x1="1160" y1="440" x2="1250" y2="360"/>
+  <line class="l"  x1="1160" y1="440" x2="1330" y2="480"/>
+  <line class="l"  x1="1160" y1="440" x2="1140" y2="560"/>
+  <line class="lf" x1="1160" y1="440" x2="1050" y2="510"/>
+  <line class="lb" x1="1250" y1="360" x2="1330" y2="480"/>
+  <line class="l"  x1="1250" y1="360" x2="1390" y2="370"/>
+  <line class="lf" x1="1250" y1="360" x2="1280" y2="580"/>
+  <line class="l"  x1="1330" y1="480" x2="1390" y2="370"/>
+  <line class="l"  x1="1330" y1="480" x2="1280" y2="580"/>
+  <line class="lf" x1="1330" y1="480" x2="1140" y2="560"/>
+  <line class="l"  x1="1140" y1="560" x2="1280" y2="580"/>
+  <line class="lf" x1="1050" y1="510" x2="1140" y2="560"/>
+
+  <!-- LÍNEAS grupo G -->
+  <line class="l"  x1="55"  y1="680" x2="150" y2="730"/>
+  <line class="lb" x1="55"  y1="680" x2="95"  y2="820"/>
+  <line class="lf" x1="55"  y1="680" x2="310" y2="680"/>
+  <line class="l"  x1="150" y1="730" x2="95"  y2="820"/>
+  <line class="l"  x1="150" y1="730" x2="240" y2="790"/>
+  <line class="lf" x1="150" y1="730" x2="430" y2="730"/>
+  <line class="l"  x1="95"  y1="820" x2="180" y2="870"/>
+  <line class="l"  x1="95"  y1="820" x2="240" y2="790"/>
+  <line class="lf" x1="95"  y1="820" x2="370" y2="840"/>
+  <line class="lb" x1="240" y1="790" x2="370" y2="840"/>
+  <line class="l"  x1="240" y1="790" x2="310" y2="680"/>
+  <line class="l"  x1="240" y1="790" x2="430" y2="730"/>
+  <line class="lf" x1="240" y1="790" x2="180" y2="870"/>
+  <line class="l"  x1="310" y1="680" x2="430" y2="730"/>
+  <line class="l"  x1="370" y1="840" x2="430" y2="730"/>
+  <line class="lf" x1="370" y1="840" x2="180" y2="870"/>
+
+  <!-- LÍNEAS grupo H -->
+  <line class="lb" x1="550" y1="660" x2="640" y2="730"/>
+  <line class="l"  x1="550" y1="660" x2="720" y2="640"/>
+  <line class="l"  x1="550" y1="660" x2="610" y2="820"/>
+  <line class="lf" x1="550" y1="660" x2="810" y2="720"/>
+  <line class="l"  x1="640" y1="730" x2="720" y2="640"/>
+  <line class="l"  x1="640" y1="730" x2="810" y2="720"/>
+  <line class="l"  x1="640" y1="730" x2="610" y2="820"/>
+  <line class="lf" x1="640" y1="730" x2="745" y2="820"/>
+  <line class="lb" x1="720" y1="640" x2="810" y2="720"/>
+  <line class="lf" x1="720" y1="640" x2="880" y2="800"/>
+  <line class="l"  x1="810" y1="720" x2="880" y2="800"/>
+  <line class="l"  x1="810" y1="720" x2="745" y2="820"/>
+  <line class="lf" x1="810" y1="720" x2="610" y2="820"/>
+  <line class="l"  x1="610" y1="820" x2="745" y2="820"/>
+  <line class="l"  x1="610" y1="820" x2="680" y2="870"/>
+  <line class="lf" x1="745" y1="820" x2="880" y2="800"/>
+  <line class="l"  x1="745" y1="820" x2="680" y2="870"/>
+
+  <!-- LÍNEAS grupo I -->
+  <line class="l"  x1="1010" y1="650" x2="1110" y2="700"/>
+  <line class="lb" x1="1010" y1="650" x2="1210" y2="640"/>
+  <line class="lf" x1="1010" y1="650" x2="1060" y2="800"/>
+  <line class="l"  x1="1110" y1="700" x2="1210" y2="640"/>
+  <line class="l"  x1="1110" y1="700" x2="1300" y2="730"/>
+  <line class="l"  x1="1110" y1="700" x2="1170" y2="820"/>
+  <line class="lf" x1="1110" y1="700" x2="1060" y2="800"/>
+  <line class="lb" x1="1210" y1="640" x2="1300" y2="730"/>
+  <line class="l"  x1="1210" y1="640" x2="1380" y2="650"/>
+  <line class="lf" x1="1210" y1="640" x2="1340" y2="850"/>
+  <line class="l"  x1="1300" y1="730" x2="1380" y2="650"/>
+  <line class="l"  x1="1300" y1="730" x2="1170" y2="820"/>
+  <line class="l"  x1="1300" y1="730" x2="1340" y2="850"/>
+  <line class="lf" x1="1170" y1="820" x2="1060" y2="800"/>
+  <line class="l"  x1="1170" y1="820" x2="1340" y2="850"/>
+
+  <!-- INTERCONEXIONES entre grupos -->
+  <line class="lf" x1="370"  y1="52"  x2="540"  y2="27"/>
+  <line class="lf" x1="420"  y1="190" x2="620"  y2="110"/>
+  <line class="lf" x1="310"  y1="148" x2="510"  y2="250"/>
+  <line class="lf" x1="275"  y1="320" x2="510"  y2="250"/>
+  <line class="lf" x1="89"   y1="197" x2="28"   y2="390"/>
+  <line class="lf" x1="163"  y1="260" x2="110"  y2="445"/>
+  <line class="lf" x1="275"  y1="320" x2="195"  y2="490"/>
+  <line class="lf" x1="910"  y1="175" x2="1020" y2="35"/>
+  <line class="lf" x1="760"  y1="280" x2="1060" y2="180"/>
+  <line class="lf" x1="790"  y1="130" x2="1000" y2="250"/>
+  <line class="lf" x1="670"  y1="195" x2="650"  y2="280"/>
+  <line class="lf" x1="760"  y1="280" x2="730"  y2="390"/>
+  <line class="lf" x1="910"  y1="175" x2="960"  y2="350"/>
+  <line class="lf" x1="1140" y1="230" x2="1070" y2="380"/>
+  <line class="lf" x1="1380" y1="195" x2="1390" y2="370"/>
+  <line class="lf" x1="1060" y1="180" x2="1050" y2="510"/>
+  <line class="lf" x1="460"  y1="560" x2="580"  y2="360"/>
+  <line class="lf" x1="410"  y1="420" x2="580"  y2="360"/>
+  <line class="lf" x1="185"  y1="620" x2="550"  y2="660"/>
+  <line class="lf" x1="75"   y1="560" x2="55"   y2="680"/>
+  <line class="lf" x1="185"  y1="620" x2="150"  y2="730"/>
+  <line class="lf" x1="340"  y1="530" x2="310"  y2="680"/>
+  <line class="lf" x1="920"  y1="510" x2="1050" y2="510"/>
+  <line class="lf" x1="960"  y1="350" x2="1070" y2="380"/>
+  <line class="lf" x1="880"  y1="440" x2="1070" y2="380"/>
+  <line class="lf" x1="640"  y1="510" x2="550"  y2="660"/>
+  <line class="lf" x1="700"  y1="460" x2="640"  y2="730"/>
+  <line class="lf" x1="790"  y1="500" x2="810"  y2="720"/>
+  <line class="lf" x1="920"  y1="510" x2="960"  y2="600"/>
+  <line class="lf" x1="1140" y1="560" x2="1010" y2="650"/>
+  <line class="lf" x1="1280" y1="580" x2="1300" y2="730"/>
+  <line class="lf" x1="1330" y1="480" x2="1380" y2="650"/>
+  <line class="lf" x1="430"  y1="730" x2="550"  y2="660"/>
+  <line class="lf" x1="370"  y1="840" x2="610"  y2="820"/>
+  <line class="lf" x1="880"  y1="800" x2="1010" y2="650"/>
+  <line class="lf" x1="960"  y1="600" x2="1010" y2="650"/>
+  <line class="lf" x1="745"  y1="820" x2="1060" y2="800"/>
+  <line class="lf" x1="490"  y1="140" x2="420"  y2="190"/>
+  <line class="lf" x1="490"  y1="140" x2="540"  y2="27"/>
+  <line class="lf" x1="510"  y1="250" x2="460"  y2="560"/>
+  <line class="lf" x1="490"  y1="640" x2="550"  y2="660"/>
+  <line class="lf" x1="960"  y1="600" x2="880"  y2="800"/>
+  <line class="lf" x1="1000" y1="250" x2="1060" y2="180"/>
+  <line class="lf" x1="1000" y1="250" x2="960"  y2="350"/>
+</svg>

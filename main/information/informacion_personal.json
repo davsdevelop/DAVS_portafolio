@@ -1,0 +1,13 @@
+{
+    "personal": {
+        "saludo": "Hola, mi nombre es",
+        "nombre": "Diego Videla Silva",
+        "fotografia": "/davs/DAVS_OK.png",
+        "cargo": "FULL-STACK SOFTWARE ENGINEER | MIDDLEWARE & BACKEND SPECIALIST",
+        "descripcion": "Ingeniero en Automatización y Robótica con sólida trayectoria en desarrollo de software y gran capacidad de aprendizaje autónomo. Especialista en arquitecturas de integración Middleware y desarrollo Backend, con foco en conectar soluciones digitales con entornos operativos eficientes. Profesional analítico y adaptable, enfocado en resolver problemas complejos de forma colaborativa.",
+        "linkedin_link": "https://www.linkedin.com/in/tu-enlace/",
+        "davs_email": "dvidelasilva@gmail.com",
+        "davs_ubicacion": "Buin, Chile",
+        "CV": "/documentos/DAVS_CV_Dev.pdf"
+    }
+}

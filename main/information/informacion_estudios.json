@@ -1,0 +1,79 @@
+{
+    "grupo1": {
+        "titulo": "Formacion Universitaria"
+    },
+    "estudio_1_1": {
+        "titulo": "Diplomatura Data Science",
+        "fecha_inicio": "Marzo - 2025",
+        "fecha_fin": "En curso",
+        "institucion": "CODERHOUSE",
+        "link_certificado": ""
+    },
+    "estudio_1_2": {
+        "titulo": "Diplomado en Inteligencia Artificial Aplicada",
+        "fecha_inicio": "Marzo - 2021",
+        "fecha_fin": "Diciembre - 2022",
+        "institucion": "Universidad INACAP",
+        "link_certificado": "/documentos/certificados/DAVS_Diplomado.pdf"
+    },
+    "estudio_1_3": {
+        "titulo": "Ingeniería en Automatización Control Industrial y Robótica",
+        "fecha_inicio": "Marzo - 2016",
+        "fecha_fin": "Diciembre - 2020",
+        "institucion": "Universidad INACAP",
+        "link_certificado": "/documentos/certificados/DAVS_Titulo.pdf"
+    },
+
+
+
+    "grupo2": {
+        "titulo": "Certificaciones & Cursos"
+    },
+    "estudio_2_1": {
+        "titulo": "Cloud Computing",
+        "fecha_inicio": "Mayo - 2025",
+        "fecha_fin": "Agosto - 2025",
+        "institucion": "CODERHOUSE",
+        "link_certificado": "/documentos/certificados/DAVS_cloud_computing.pdf"
+    },
+    "estudio_2_2": {
+        "titulo": "Framework NestJS - Fundamentals & Authentication and Authorization",
+        "fecha_inicio": "Enero - 2025",
+        "fecha_fin": "Mayo - 2025",
+        "institucion": "Official NestJS Course",
+        "link_certificado1": "/documentos/certificados/DAVS_nestjs_fundamental.pdf",
+        "link_certificado2": "/documentos/certificados/DAVS_nestjs_security.pdf"
+    },
+    "estudio_2_3": {
+        "titulo": "Programación Backend",
+        "fecha_inicio": "Enero - 2024",
+        "fecha_fin": "Enero - 2025",
+        "institucion": "CODERHOUSE",
+        "link_certificado1": "/documentos/certificados/DAVS_Backend_I.pdf",
+        "link_certificado2": "/documentos/certificados/DAVS_Backend_II.pdf",
+        "link_certificado3": "/documentos/certificados/DAVS_Backend_III.pdf"
+
+    },
+    "estudio_2_4": {
+        "titulo": "Programación Java",
+        "fecha_inicio": "Septiembre - 2024",
+        "fecha_fin": "Noviembre - 2024",
+        "institucion": "CODERHOUSE",
+        "link_certificado": "/documentos/certificados/DAVS_Programacion_Java.pdf"
+    },
+    "estudio_2_5": {
+        "titulo": "SQL",
+        "fecha_inicio": "Marzo - 2024",
+        "fecha_fin": "Junio - 2024",
+        "institucion": "Cisco Networking Academy Course",
+        "link_certificado": "/documentos/certificados/DAVS_SQL.pdf"
+    },
+    "estudio_2_6": {
+        "titulo": "Programming Essentials in Python",
+        "fecha_inicio": "Marzo - 2021",
+        "fecha_fin": "Diciembre - 2021",
+        "institucion": "Cisco Networking Academy Course",
+        "link_certificado": "/documentos/certificados/DAVS_python_cisco.pdf"
+    }
+
+}

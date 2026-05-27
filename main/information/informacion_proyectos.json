@@ -1,0 +1,23 @@
+{
+    "proyecto_python_1": {
+        "titulo": "DAVS GeoCalc: Calculadora Geométrica en Python Puro",
+        "descripcion": "Una calculadora geométrica interactiva basada en consola y escrita en Python puro. Cuenta con una interfaz visual limpia utilizando arte ASCII y una arquitectura modular diseñada para escalar e incorporar fácilmente nuevas figuras 2D, sólidos 3D y sus respectivas fórmulas matemáticas.",
+        "link_repositorio": "https://github.com/davsdevelop/DAVS_python_calculadora_geometrica",
+        "link_app": "http",
+        "imagen": "/imagenes/proyectos/DAVS_calculadora_geometrica.png"
+    },
+    "proyecto_reflex_1": {
+        "titulo": "DAVS Cron-t: Gestor Reactivo de Tareas y Tiempo",
+        "descripcion": "DAVS Cron-t es una aplicación web diseñada para gestionar tus tareas diarias mediante cronómetros independientes. A través de una interfaz clara e intuitiva, puedes agregar fácilmente nuevas actividades y llevar un registro exacto del tiempo dedicado. Cada tarea cuenta con su propio panel de control, permitiéndote pausar, reanudar, reiniciar desde cero o eliminar temporizadores sobre la marcha.",
+        "link_repositorio": "https://github.com/davsdevelop/DAVS_Cron_t",
+        "link_app": "http",
+        "imagen": "/imagenes/proyectos/DAVS_Cron_t.png"
+    },
+    "proyecto_reflex_2": {
+        "titulo": "DAVS Mecanografía TEST: Mide tu Velocidad y Precisión",
+        "descripcion": "DAVS Mecanografía TEST es una aplicación interactiva diseñada para evaluar y mejorar tu velocidad de escritura. La plataforma te presenta un párrafo aleatorio y mide el tiempo exacto desde la primera tecla presionada hasta completar el texto. A medida que escribes, la interfaz proporciona retroalimentación visual inmediata carácter por carácter, mostrando tus aciertos, errores y progreso a través de una barra en tiempo real. Al finalizar, obtendrás un resumen detallado con tus palabras por minuto (WPM), precisión, tiempo total y tu mejor racha continuada.",
+        "link_repositorio": "https://github.com/davsdevelop/DAVS_Mecanografia_test",
+        "link_app": "http",
+        "imagen": "/imagenes/proyectos/DAVS_mecanografia_test.png"
+    }
+}
