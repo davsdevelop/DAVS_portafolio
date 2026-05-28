@@ -1,0 +1,7 @@
+/* Ocultar forzosamente el contenedor de errores de conexión (Sonner) */
+[data-sonner-toaster] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}

@@ -33,12 +33,9 @@ def index() -> rx.Component:
     )
 
 app = rx.App(
-    style={
-        # Esto oculta todas las notificaciones de error "toast" del sistema
-        "[data-sonner-toast]": {
-            "display": "none !important",
-        }
-    }
+    stylesheets=[
+        "/custom.css"
+    ]
 )
 app.add_page(index)
 
