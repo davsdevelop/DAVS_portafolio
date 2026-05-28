@@ -1,8 +1,6 @@
 import reflex as rx
 import json
-
 from pathlib import Path
-from ...components.paleta_colores import mi_paleta_colores
 from ..style import (
     BODY, 
     COL_SPAN_1, 
@@ -66,54 +64,50 @@ def proyecto_icon_with_separator(img_src: str, href: str, technology_name: str =
 
 def body_home() -> rx.Component:
     return rx.box(
-        # BODY 
         rx.box(
             # ************************************
-            # CAJA IZQUIERDA (66% de la pantalla)
+            # CAJA IZQUIERDA (Presentación)
             # ************************************
             rx.box(
-                # PRESENTACION
                 rx.box(
                     rx.vstack(
                         # PRESENTACION - Fotografia - Saludo - Nombre
+                        # CAMBIO: Una caja flex que cambia de columna (móvil) a fila (PC)
                         rx.box(
-                            rx.hstack(
-                                # PRESENTACION - Fotografia
-                                rx.box(
-                                    rx.image(src=INFORMACION_PERSONAL["personal"]["fotografia"], class_name=BODY_HOME_PRESENTACION_FOTO),
-                                    class_name=BODY_HOME_PRESENTACION_FOTO_BASE
-                                ),
-                                # PRESENTACION - Saludo - Nombre
-                                rx.box(
-                                    rx.vstack(
-                                        # PRESENTACION - Saludo
-                                        rx.box(
-                                            rx.text(INFORMACION_PERSONAL["personal"]["saludo"]),
-                                            class_name=BODY_HOME_PRESENTACION_TEXTO_SALUDO
-                                        ),
-                                        # PRESENTACION - Nombre
-                                        rx.box(
-                                            rx.text(INFORMACION_PERSONAL["personal"]["nombre"]),
-                                            class_name=BODY_HOME_PRESENTACION_TEXTO_MI_NOMBRE
-                                        ),
-                                        spacing="0",
-                                    ),
-                                ),
-                                spacing="0",
+                            # Fotografia
+                            rx.box(
+                                rx.image(src=INFORMACION_PERSONAL["personal"]["fotografia"], class_name=BODY_HOME_PRESENTACION_FOTO),
+                                class_name=BODY_HOME_PRESENTACION_FOTO_BASE
                             ),
+                            # Saludo y Nombre
+                            rx.box(
+                                rx.vstack(
+                                    rx.box(
+                                        rx.text(INFORMACION_PERSONAL["personal"]["saludo"]),
+                                        class_name=BODY_HOME_PRESENTACION_TEXTO_SALUDO
+                                    ),
+                                    rx.box(
+                                        rx.text(INFORMACION_PERSONAL["personal"]["nombre"]),
+                                        class_name=BODY_HOME_PRESENTACION_TEXTO_MI_NOMBRE
+                                    ),
+                                    spacing="0",
+                                    align_items="center", # Crucial para el centrado en móvil
+                                ),
+                                class_name="w-full md:w-auto flex flex-col items-center md:items-start"
+                            ),
+                            class_name="w-full flex flex-col md:flex-row items-center md:items-end justify-center md:justify-start",
                         ),
                         # PRESENTACION - Biografia
                         rx.vstack(
-                            # Cargo
                             rx.box(
                                 rx.text(INFORMACION_PERSONAL["personal"]["cargo"]),
                                 class_name=BODY_HOME_PRESENTACION_TEXTO_CARGO
                             ),
-                            # Biografia
                             rx.text(INFORMACION_PERSONAL["personal"]["descripcion"]),
                             class_name=BODY_HOME_PRESENTACION_TEXTO_BIOGRAFIA
                         ),
                         spacing="0",
+                        align_items="center", # Alineación base para móvil
                     ),
                     class_name=BODY_HOME_PRESENTACION_BASE
                 ),
@@ -121,13 +115,11 @@ def body_home() -> rx.Component:
             ),
 
             # ************************************
-            # CAJA DERECHA (33% de la pantalla)
+            # CAJA DERECHA (Proyectos)
             # ************************************
             rx.box(
-                # PROYECTOS POR TECNOLOGÍA
                 rx.box(
                     rx.vstack(
-                        # PROYECTOS - TITULO (Mantenemos la estructura unificada que pediste)
                         rx.box(
                             rx.vstack(
                                 rx.text("PROYECTOS POR TECNOLOGÍA"),
@@ -138,44 +130,12 @@ def body_home() -> rx.Component:
                             class_name=BODY_HOME_PROYECTOS_TITULO,
                         ),
 
-                        # =========================================================================
-                        # LLAMADAS AL COMPONENTE UNIFICADO 
-                        # =========================================================================
+                        proyecto_icon_with_separator(img_src="/logos/python_logo.png", href="/proyectospython", technology_name="Python"),
+                        proyecto_icon_with_separator(img_src="/logos/fastapi_logo.png", href="/proyectosfastapi", technology_name="FastAPI"),
+                        proyecto_icon_with_separator(img_src="/logos/django_logo.png", href="/proyectosdjango", technology_name="Django"),
+                        proyecto_icon_with_separator(img_src="/logos/reflex_logo.png", href="/proyectosreflex", technology_name="Reflex"),
+                        proyecto_icon_with_separator(img_src="/logos/sql_logo.png", href="/proyectossql", technology_name="SQL"),
                         
-                        # 1. PYTHON
-                        proyecto_icon_with_separator(
-                            img_src="/logos/python_logo.png",
-                            href="/proyectospython",
-                            technology_name="Python"
-                        ),
-
-                        # 2. FASTAPI
-                        proyecto_icon_with_separator(
-                            img_src="/logos/fastapi_logo.png",
-                            href="/proyectosfastapi",
-                            technology_name="FastAPI"
-                        ),
-
-                        # 3. DJANGO
-                        proyecto_icon_with_separator(
-                            img_src="/logos/django_logo.png",
-                            href="/proyectosdjango",
-                            technology_name="Django"
-                        ),
-
-                        # 4. REFLEX
-                        proyecto_icon_with_separator(
-                            img_src="/logos/reflex_logo.png",
-                            href="/proyectosreflex",
-                            technology_name="Reflex"
-                        ),
-
-                        # 5. SQL
-                        proyecto_icon_with_separator(
-                            img_src="/logos/sql_logo.png",
-                            href="/proyectossql",
-                            technology_name="SQL"
-                        ),
                         spacing="0",
                     ),
                     class_name=BODY_HOME_PROYECTOS_BASE,

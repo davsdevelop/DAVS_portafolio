@@ -72,7 +72,7 @@ def body_experiencia() -> rx.Component:
                                     rx.list_item(punto) 
                                     for punto in INFORMACION_EXPERIENCIA["experiencia_1"]["descripcion"]
                                 ],
-                                color="gray.300",
+                                color="text-gray-300",
                                 class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_LISTA
                             ),
                             class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_BOX,
@@ -147,7 +147,7 @@ def body_experiencia() -> rx.Component:
                                     rx.list_item(punto) 
                                     for punto in INFORMACION_EXPERIENCIA["experiencia_2"]["descripcion"]
                                 ],
-                                color="gray.300",
+                                color="text-gray-300",
                                 class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_LISTA
                             ),
                             class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_BOX,
@@ -222,7 +222,7 @@ def body_experiencia() -> rx.Component:
                                     rx.list_item(punto) 
                                     for punto in INFORMACION_EXPERIENCIA["experiencia_3"]["descripcion"]
                                 ],
-                                color="gray.300",
+                                color="text-gray-300",
                                 class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_LISTA
                             ),
                             class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_BOX,
@@ -297,7 +297,7 @@ def body_experiencia() -> rx.Component:
                                     rx.list_item(punto) 
                                     for punto in INFORMACION_EXPERIENCIA["experiencia_4"]["descripcion"]
                                 ],
-                                color="gray.300",
+                                color="text-gray-300",
                                 class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_LISTA
                             ),
                             class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_BOX,
@@ -372,7 +372,7 @@ def body_experiencia() -> rx.Component:
                                     rx.list_item(punto) 
                                     for punto in INFORMACION_EXPERIENCIA["experiencia_5"]["descripcion"]
                                 ],
-                                color="gray.300",
+                                color="text-gray-300",
                                 class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_LISTA
                             ),
                             class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_BOX,

@@ -1,9 +1,9 @@
 {
     "grupo1": {
-        "titulo": "Formacion Universitaria"
+        "titulo": "Formación Universitaria"
     },
     "estudio_1_1": {
-        "titulo": "Diplomatura Data Science",
+        "titulo": "Diplomado en Data Science",
         "fecha_inicio": "Marzo - 2025",
         "fecha_fin": "En curso",
         "institucion": "CODERHOUSE",
@@ -17,7 +17,7 @@
         "link_certificado": "/documentos/certificados/DAVS_Diplomado.pdf"
     },
     "estudio_1_3": {
-        "titulo": "Ingeniería en Automatización Control Industrial y Robótica",
+        "titulo": "Ingeniería en Automatización, Control Industrial y Robótica",
         "fecha_inicio": "Marzo - 2016",
         "fecha_fin": "Diciembre - 2020",
         "institucion": "Universidad INACAP",

@@ -23,6 +23,3 @@ def sobre_mi_page() -> rx.Component:
         font_family="system-ui, sans-serif",
         spacing="0", 
     )
-
-app = rx.App()
-app.add_page(sobre_mi_page)

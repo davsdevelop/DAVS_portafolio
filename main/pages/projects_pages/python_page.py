@@ -23,6 +23,3 @@ def proyectos_python_page() -> rx.Component:
         font_family="system-ui, sans-serif",
         spacing="0", 
     )
-
-app = rx.App()
-app.add_page(proyectos_python_page)

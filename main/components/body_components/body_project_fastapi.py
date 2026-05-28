@@ -6,7 +6,7 @@ from ..style import (
     BODY, 
     PROYECTOS_HEADER_BASE, 
     PROYECTOS_HEADER_TITULO_PRINCIPAL,
-    PROYECTOS_BODY_BASE, 
+    PROYECTOS_BODY_BASE,
     PROYECTOS_CARD_BASE, 
     PROYECTOS_CARD_BASE_TITULO_CONTENEDOR,
     PROYECTOS_CARD_TITULO_TEXTO,
@@ -18,26 +18,77 @@ from ..style import (
     PROYECTOS_CARD_ICONO_LINK,
 )
 
-
 RUTA_JSON = Path(__file__).resolve().parent.parent.parent / "information" / "informacion_proyectos.json"
 with open(RUTA_JSON, "r", encoding="utf-8") as archivo:
     INFORMACION_PROYECTOS = json.load(archivo)
 
 
+def card_proyecto(datos: dict) -> rx.Component:
+    tiene_app = bool(datos.get("link_app", ""))
+    
+    iconos_children = [
+        rx.link(
+            rx.icon(tag="code", size=30),
+            href=datos["link_repositorio"],
+            is_external=True,
+            class_name=PROYECTOS_CARD_ICONO_LINK,
+        ),
+    ]
+    if tiene_app:
+        iconos_children.append(
+            rx.link(
+                rx.icon(tag="globe", size=30),
+                href=datos["link_app"],
+                is_external=True,
+                class_name=PROYECTOS_CARD_ICONO_LINK,
+            )
+        )
+
+    return rx.box(
+        rx.vstack(
+            rx.flex(
+                rx.box(
+                    rx.text(datos["titulo"]),
+                    class_name=PROYECTOS_CARD_TITULO_TEXTO,
+                ),
+                rx.box(
+                    *iconos_children,
+                    class_name=PROYECTOS_CARD_TITULO_ICONOS,
+                ),
+                direction={"initial": "column", "md": "row"},
+                class_name=PROYECTOS_CARD_BASE_TITULO_CONTENEDOR,
+            ),
+            rx.flex(
+                rx.box(
+                    rx.text(datos["descripcion"], color="gray.300"),
+                    class_name=PROYECTOS_CARD_DESC_TEXTO,
+                ),
+                rx.box(
+                    rx.image(src=datos["imagen"], class_name=PROYECTOS_CARD_DESC_IMG),
+                    class_name=PROYECTOS_CARD_DESC_IMG_CAJA,
+                ),
+                direction={"initial": "column", "md": "row"},
+                class_name=PROYECTOS_CARD_BASE_DESCRIPCION_CONTENEDOR,
+            ),
+            spacing="0",
+        ),
+        class_name=PROYECTOS_CARD_BASE,
+    )
+
+
 def proyectos_fastapi() -> rx.Component:
     return rx.box(
         rx.vstack(
-            # 1. HEADER GENERAL DE LA PÁGINA
             rx.box(
-                rx.heading("PROYECTOS FASTAPI", class_name=PROYECTOS_HEADER_TITULO_PRINCIPAL), 
+                rx.heading("PROYECTOS FASTAPI", class_name=PROYECTOS_HEADER_TITULO_PRINCIPAL),
                 class_name=PROYECTOS_HEADER_BASE,
             ),
-            # 2. CONTENEDOR DE TARJETAS
             rx.box(
-
-                # AQUI TARJETAS
-
-            class_name=PROYECTOS_BODY_BASE,
+                rx.text(
+                    "Próximamente...",
+                    class_name="text-davs-color-morado-claro text-lg text-center w-full py-20",
+                ),
+                class_name=PROYECTOS_BODY_BASE,
             ),
             spacing="0",
             width="100%",
