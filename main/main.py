@@ -32,7 +32,14 @@ def index() -> rx.Component:
         spacing="0", 
     )
 
-app = rx.App()
+app = rx.App(
+    style={
+        # Esto oculta todas las notificaciones de error "toast" del sistema
+        "[data-sonner-toast]": {
+            "display": "none !important",
+        }
+    }
+)
 app.add_page(index)
 
 app.add_page(experiencia_page(), route="/experiencia")

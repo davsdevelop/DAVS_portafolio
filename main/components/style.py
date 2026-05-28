@@ -185,7 +185,7 @@ CONTACTO_TEXTO_LINK = "text-davs-color-morado-claro text-lg font-medium hover:te
 # ==========================================
 FOOTER_BASE = (
     "w-full h-[70px] bg-davs-color-base "
-    "flex justify-between items-center px-10 " 
+    "flex justify-between items-center px-60 " 
     "border-t border-[#1A2332]"
 )
 FOOTER_TEXT = "text-sm font-medium text-davs-color-morado-oscuro"
