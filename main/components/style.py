@@ -89,7 +89,7 @@ PROYECTOS_CARD_BASE_TITULO_CONTENEDOR = "w-full min-h-[50px] h-auto bg-davs-colo
 PROYECTOS_CARD_TITULO_TEXTO = "w-full md:w-[80%] p-4 flex items-center font-bold text-davs-color-morado-oscuro text-xl md:text-2xl break-words"
 PROYECTOS_CARD_TITULO_ICONOS = "w-full md:w-[20%] flex items-center justify-center md:justify-end gap-4 p-4"
 PROYECTOS_CARD_BASE_DESCRIPCION_CONTENEDOR = "w-full flex-1 flex flex-col md:flex-row" # flex-col para móvil
-PROYECTOS_CARD_DESC_TEXTO = "w-full md:w-[60%] p-6 flex flex-col justify-start text-sm md:text-base"
+PROYECTOS_CARD_DESC_TEXTO = "w-full md:w-[60%] p-6 flex flex-col justify-start text-sm md:text-base text-gray-300"
 PROYECTOS_CARD_DESC_IMG_CAJA = "w-full md:w-[40%] h-auto p-6 flex justify-center items-center"
 PROYECTOS_CARD_DESC_IMG = "w-full h-full object-cover rounded-xl border-2 border-davs-color-cian"
 PROYECTOS_CARD_ICONO_LINK = "text-davs-color-cian hover:!text-white transition-colors cursor-pointer"
@@ -116,7 +116,7 @@ EXPERIENCIA_CARD_HEADER_FECHA_TEXT = "text-white text-sm text-right"
 # ==== EXPERIENCIA CARD - BODY 
 EXPERIENCIA_CARD_BODY_BASE = "w-full flex-1 flex flex-col md:flex-row"                      # ← CORREGIDO: era solo flex-row, roto en mobile
 EXPERIENCIA_CARD_BODY_DESCRIPCION_BOX = "w-full md:w-[60%] h-auto p-6 pb-8 flex flex-col justify-start"   # ← CORREGIDO: w-full en mobile
-EXPERIENCIA_CARD_BODY_DESCRIPCION_LISTA = "list-disc ml-6 space-y-2"
+EXPERIENCIA_CARD_BODY_DESCRIPCION_LISTA = "list-disc ml-6 space-y-2 text-gray-300"
 EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_BOX = "w-full md:w-[40%] h-full p-4 flex justify-center items-center"  # ← CORREGIDO: w-full en mobile
 EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG = "w-full h-auto object-contain rounded-lg border border-gray-700 cursor-zoom-in hover:opacity-80 transition-opacity"
 EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_ZOOM = "w-full h-auto max-h-[90vh] object-contain rounded-xl"

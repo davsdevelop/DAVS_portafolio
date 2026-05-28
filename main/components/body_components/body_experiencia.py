@@ -372,7 +372,6 @@ def body_experiencia() -> rx.Component:
                                     rx.list_item(punto) 
                                     for punto in INFORMACION_EXPERIENCIA["experiencia_5"]["descripcion"]
                                 ],
-                                color="text-gray-300",
                                 class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_LISTA
                             ),
                             class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_BOX,

@@ -60,7 +60,7 @@ def card_proyecto(datos: dict) -> rx.Component:
             ),
             rx.flex(
                 rx.box(
-                    rx.text(datos["descripcion"], color="gray.300"),
+                    rx.text(datos["descripcion"]),
                     class_name=PROYECTOS_CARD_DESC_TEXTO,
                 ),
                 rx.box(
