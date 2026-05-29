@@ -84,10 +84,8 @@ def proyectos_django() -> rx.Component:
                 class_name=PROYECTOS_HEADER_BASE,
             ),
             rx.box(
-                rx.text(
-                    "Próximamente...",
-                    class_name="text-davs-color-morado-claro text-lg text-center w-full py-20",
-                ),
+                card_proyecto(INFORMACION_PROYECTOS["proyecto_django_1"]),
+                card_proyecto(INFORMACION_PROYECTOS["proyecto_django_2"]),
                 class_name=PROYECTOS_BODY_BASE,
             ),
             spacing="0",

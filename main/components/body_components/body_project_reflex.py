@@ -92,4 +92,4 @@ def proyectos_reflex() -> rx.Component:
             width="100%",
         ),
         class_name=BODY,
-    )
+    ) 

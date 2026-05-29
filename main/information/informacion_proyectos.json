@@ -4,20 +4,56 @@
         "descripcion": "Una calculadora geométrica interactiva basada en consola y escrita en Python puro. Cuenta con una interfaz visual limpia utilizando arte ASCII y una arquitectura modular diseñada para escalar e incorporar fácilmente nuevas figuras 2D, sólidos 3D y sus respectivas fórmulas matemáticas.",
         "link_repositorio": "https://github.com/davsdevelop/DAVS_python_calculadora_geometrica",
         "link_app": "http",
-        "imagen": "/imagenes/proyectos/DAVS_calculadora_geometrica.png"
+        "imagen": "/imagenes/proyectos/python/DAVS_calculadora_geometrica.png"
     },
+
+
+    "proyecto_fastapi_1": {
+        "titulo": "DAVSNote: API RESTful de Gestión y Colaboración de Notas",
+        "descripcion": "DAVSNote es una API RESTful robusta construida con Python y FastAPI, diseñada para la gestión segura y eficiente de notas digitales. El proyecto destaca por una implementación estricta de arquitectura limpia (separando responsabilidades en Routers, Services y Repositories), garantizando un código escalable y mantenible. Además, resuelve el desafío de la colaboración multi-usuario mediante un avanzado sistema de permisos granular, permitiendo compartir notas individuales o etiquetas con roles específicos de Lectura o Edición.",
+        "link_repositorio": "https://github.com/davsdevelop/DAVS_DAVSNote",
+        "link_app": "",
+        "imagen": "/imagenes/proyectos/fastapi/DAVS_DAVSNote.png"
+    },
+    "proyecto_fastapi_2": {
+        "titulo": "DAVSMiniBlog: API RESTful con Gestión de Roles y Taxonomías",
+        "descripcion": "DAVSMiniBlog es una API RESTful desarrollada con FastAPI para la gestión integral de un blog. Implementa una arquitectura modular con SQLAlchemy y SQLite, destacando por su robusto sistema de seguridad basado en JSON Web Tokens (JWT) con control de acceso jerárquico por roles (Admin, Editor, User). El motor de base de datos gestiona eficientemente relaciones complejas, incluyendo taxonomías de uno a muchos (categorías) y de muchos a muchos (etiquetas). Además, cuenta con endpoints dedicados para la validación y almacenamiento local de archivos multimedia, paginación estructurada de resultados y herramientas de CLI (Typer) para el poblamiento automático de la base de datos.",
+        "link_repositorio": "https://github.com/davsdevelop/DAVS_DAVSMiniBlog",
+        "link_app": "",
+        "imagen": "/imagenes/proyectos/fastapi/DAVS_DAVSMiniBlog.png"
+    },
+
+
     "proyecto_reflex_1": {
         "titulo": "DAVS Cron-t: Gestor Reactivo de Tareas y Tiempo",
         "descripcion": "DAVS Cron-t es una aplicación web diseñada para gestionar tus tareas diarias mediante cronómetros independientes. A través de una interfaz clara e intuitiva, puedes agregar fácilmente nuevas actividades y llevar un registro exacto del tiempo dedicado. Cada tarea cuenta con su propio panel de control, permitiéndote pausar, reanudar, reiniciar desde cero o eliminar temporizadores sobre la marcha.",
         "link_repositorio": "https://github.com/davsdevelop/DAVS_Cron_t",
         "link_app": "https://davs-cron-t-ui.onrender.com",
-        "imagen": "/imagenes/proyectos/DAVS_Cron_t.png"
+        "imagen": "/imagenes/proyectos/reflex/DAVS_Cron_t.png"
     },
     "proyecto_reflex_2": {
         "titulo": "DAVS Mecanografía TEST: Mide tu Velocidad y Precisión",
         "descripcion": "DAVS Mecanografía TEST es una aplicación interactiva diseñada para evaluar y mejorar tu velocidad de escritura. La plataforma te presenta un párrafo aleatorio y mide el tiempo exacto desde la primera tecla presionada hasta completar el texto. A medida que escribes, la interfaz proporciona retroalimentación visual inmediata carácter por carácter, mostrando tus aciertos, errores y progreso a través de una barra en tiempo real. Al finalizar, obtendrás un resumen detallado con tus palabras por minuto (WPM), precisión, tiempo total y tu mejor racha continuada.",
         "link_repositorio": "https://github.com/davsdevelop/DAVS_Mecanografia_test",
         "link_app": "https://davs-mecanografia-test-ui.onrender.com",
-        "imagen": "/imagenes/proyectos/DAVS_mecanografia_test.png"
+        "imagen": "/imagenes/proyectos/reflex/DAVS_mecanografia_test.png"
+    },
+
+
+
+    "proyecto_django_1": {
+        "titulo": "DAVS Gestor Biblioteca: Arquitectura MVT con Django",
+        "descripcion": "Sistema web full-stack desarrollado para la gestión de inventario y préstamos de una biblioteca. Construido sobre el framework Django, el proyecto implementa rigurosamente el patrón arquitectónico MVT (Model-View-Template). Destaca por el diseño de una base de datos relacional estricta usando Django ORM y SQLite, asegurando la integridad de los datos mediante Claves Foráneas (Foreign Keys). En la capa lógica, incorpora ModelForms para validación automatizada y el patrón PRG (Post/Redirect/Get) junto con el sistema nativo de Messages de Django para un flujo de usuario seguro. La interfaz de usuario fue diseñada desde cero utilizando HTML5 y CSS3 nativo (Variables y Flexbox), logrando una presentación moderna y responsiva sin dependencias externas.",
+        "link_repositorio": "https://github.com/davsdevelop/DAVS_Gestor_Biblioteca",
+        "link_app": "https://davs-gestor-biblioteca.onrender.com/",
+        "imagen": "/imagenes/proyectos/django/DAVS_gestor_biblioteca.png"
+    },
+    "proyecto_django_2": {
+        "titulo": "Portal Literario: Blog Full-Stack con Django",
+        "descripcion": "Portal literario desarrollado en Django enfocado en la gestión de artículos enriquecidos y la interacción social. El proyecto destaca por el uso de CKEditor para la edición de contenido, un sistema de mensajería interna entre usuarios registrados y un sistema de perfiles personalizados vinculados mediante señales (post_save). La arquitectura sigue el patrón MVT, protegiendo rutas mediante Mixins de autenticación y utilizando un diseño de interfaz responsivo implementado con CSS nativo (Flexbox y variables globales) para mantener una estética profesional y minimalista.",
+        "link_repositorio": "https://github.com/davsdevelop/DAVS_Blog_Articulos_Literarios",
+        "link_app": "https://davs-blog-articulosliterarios.onrender.com",
+        "imagen": "/imagenes/proyectos/django/DAVS_blog_articulos_literarios.png"
+
     }
 }
