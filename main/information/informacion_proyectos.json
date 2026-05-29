@@ -55,5 +55,22 @@
         "link_app": "https://davs-blog-articulosliterarios.onrender.com",
         "imagen": "/imagenes/proyectos/django/DAVS_blog_articulos_literarios.png"
 
+    },
+
+
+    "proyecto_sql_1": {
+        "titulo": "RAAC: Análisis y Visualización de Avifauna Chilena - SQL & Power BI",
+        "descripcion": "Proyecto de Business Intelligence enfocado en la conservación y ciencia ciudadana. La arquitectura integra una base de datos relacional robusta diseñada en SQL Server para el almacenamiento de registros ornitológicos, validada mediante un modelo Entidad-Relación normalizado. El análisis de datos se ejecuta mediante un flujo ETL (Extracción, Transformación y Carga) que culmina en un dashboard interactivo desarrollado en Power BI. El proyecto destaca por la implementación de lógica avanzada en DAX para métricas de biodiversidad y KPIs de gestión comunitaria, además de segmentación temporal y análisis geoespacial para la identificación de hotspots de especies vulnerables.",
+        "link_repositorio": "https://github.com/davsdevelop/DAVS_RAAC_Data",
+        "link_app": "",
+        "imagen": "/imagenes/proyectos/sql/DAVS_RAAC_data.png"
+    },
+    "proyecto_sql_2": {
+        "titulo": "WikiHorrorBook: Ecosistema de Datos para Literatura de Terror",
+        "descripcion": "Desarrollo de una base de datos relacional compleja diseñada para una plataforma tipo wiki especializada en literatura de horror. El proyecto implementa un modelo normalizado para la gestión integral de libros, autores, géneros y editoriales, soportado por objetos de mantenimiento avanzados como vistas para reportes analíticos, funciones de cálculo y procedimientos almacenados para búsquedas eficientes. Se priorizó la integridad y trazabilidad mediante el uso de Triggers para auditoría y validación de datos. Además de la estructura de persistencia, el sistema incorpora módulos de comunidad (reseñas y ediciones colaborativas) y analítica (seguimiento de visitas y rankings), consolidando una arquitectura escalable optimizada para el procesamiento y consulta de grandes volúmenes de información bibliográfica.",
+        "link_repositorio": "https://github.com/davsdevelop/DAVS_Wikihorrorbook_data",
+        "link_app": "",
+        "imagen": "/imagenes/proyectos/sql/DAVS_Wikihorrorbook_data.png"
     }
+
 }

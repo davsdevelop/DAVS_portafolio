@@ -103,7 +103,8 @@ def body_experiencia() -> rx.Component:
                                        ),
                                        background_color="#0E151F",
                                        border="2px solid #00D1B3",
-                                       max_width="7xl",
+                                       max_width="45vw",
+                                       width="45vw",
                                        class_name="rounded-xl shadow-2xl p-4"
                                 ),
                             ),
@@ -178,7 +179,8 @@ def body_experiencia() -> rx.Component:
                                        ),
                                        background_color="#0E151F",
                                        border="2px solid #00D1B3",
-                                       max_width="4xl",
+                                       max_width="45vw",
+                                       width="45vw",
                                        class_name="rounded-xl shadow-2xl p-4"
                                 ),
                             ),
@@ -253,7 +255,8 @@ def body_experiencia() -> rx.Component:
                                        ),
                                        background_color="#0E151F",
                                        border="2px solid #00D1B3",
-                                       max_width="4xl",
+                                       max_width="45vw",
+                                       width="45vw",
                                        class_name="rounded-xl shadow-2xl p-4"
                                 ),
                             ),
@@ -328,7 +331,8 @@ def body_experiencia() -> rx.Component:
                                        ),
                                        background_color="#0E151F",
                                        border="2px solid #00D1B3",
-                                       max_width="4xl",
+                                       max_width="45vw",
+                                       width="45vw",
                                        class_name="rounded-xl shadow-2xl p-4"
                                 ),
                             ),
@@ -402,7 +406,8 @@ def body_experiencia() -> rx.Component:
                                        ),
                                        background_color="#0E151F",
                                        border="2px solid #00D1B3",
-                                       max_width="4xl",
+                                       max_width="45vw",
+                                       width="45vw",
                                        class_name="rounded-xl shadow-2xl p-4"
                                 ),
                             ),

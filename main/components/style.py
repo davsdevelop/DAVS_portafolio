@@ -91,8 +91,10 @@ PROYECTOS_CARD_TITULO_ICONOS = "w-full md:w-[20%] flex items-center justify-cent
 PROYECTOS_CARD_BASE_DESCRIPCION_CONTENEDOR = "w-full flex-1 flex flex-col md:flex-row" # flex-col para móvil
 PROYECTOS_CARD_DESC_TEXTO = "w-full md:w-[60%] p-6 flex flex-col justify-start text-sm md:text-base text-gray-300"
 PROYECTOS_CARD_DESC_IMG_CAJA = "w-full md:w-[40%] h-auto p-6 flex justify-center items-center"
-PROYECTOS_CARD_DESC_IMG = "w-full h-full object-cover rounded-xl border-2 border-davs-color-cian"
+PROYECTOS_CARD_DESC_IMG = "w-full h-full object-cover rounded-xl border-2 border-davs-color-cian cursor-zoom-in hover:opacity-80 transition-opacity"
 PROYECTOS_CARD_ICONO_LINK = "text-davs-color-cian hover:!text-white transition-colors cursor-pointer"
+PROYECTOS_CARD_DESC_IMG_ZOOM = "w-full h-auto max-h-[90vh] object-contain rounded-xl"
+PROYECTOS_CARD_DESC_IMG_ZOOM_CERRAR = "mt-4 px-6 py-2 bg-[#0E151F] text-white border border-[#00D1B3] hover:bg-[#00D1B3] hover:text-black rounded-lg transition-colors cursor-pointer"
 
 
 # ==========================================

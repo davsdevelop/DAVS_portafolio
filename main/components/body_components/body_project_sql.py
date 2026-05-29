@@ -16,6 +16,8 @@ from ..style import (
     PROYECTOS_CARD_DESC_IMG_CAJA,
     PROYECTOS_CARD_DESC_IMG,
     PROYECTOS_CARD_ICONO_LINK,
+    PROYECTOS_CARD_DESC_IMG_ZOOM,
+    PROYECTOS_CARD_DESC_IMG_ZOOM_CERRAR,
 )
 
 RUTA_JSON = Path(__file__).resolve().parent.parent.parent / "information" / "informacion_proyectos.json"
@@ -63,10 +65,42 @@ def card_proyecto(datos: dict) -> rx.Component:
                     rx.text(datos["descripcion"]),
                     class_name=PROYECTOS_CARD_DESC_TEXTO,
                 ),
+                
+                # INICIO DEL CAMBIO: Contenedor de la Imagen con Zoom
                 rx.box(
-                    rx.image(src=datos["imagen"], class_name=PROYECTOS_CARD_DESC_IMG),
+                    rx.dialog.root(
+                        rx.dialog.trigger(
+                            rx.image(
+                                src=datos["imagen"], 
+                                class_name=PROYECTOS_CARD_DESC_IMG
+                            ),
+                        ),
+                        rx.dialog.content(
+                            rx.vstack(
+                                rx.image(
+                                    src=datos["imagen"],
+                                    class_name=PROYECTOS_CARD_DESC_IMG_ZOOM
+                                ),
+                                rx.dialog.close(
+                                    rx.button(
+                                        "Cerrar", 
+                                        class_name=PROYECTOS_CARD_DESC_IMG_ZOOM_CERRAR
+                                    )
+                                ),
+                                align_items="center",
+                                spacing="0"
+                            ),
+                            background_color="#0E151F",
+                            border="2px solid #00D1B3",
+                            max_width="45vw",
+                            width="45vw",
+                            class_name="rounded-xl shadow-2xl p-4"
+                        ),
+                    ),
                     class_name=PROYECTOS_CARD_DESC_IMG_CAJA,
                 ),
+                # FIN DEL CAMBIO
+                
                 direction={"initial": "column", "md": "row"},
                 class_name=PROYECTOS_CARD_BASE_DESCRIPCION_CONTENEDOR,
             ),
@@ -84,10 +118,8 @@ def proyectos_sql() -> rx.Component:
                 class_name=PROYECTOS_HEADER_BASE,
             ),
             rx.box(
-                rx.text(
-                    "Próximamente...",
-                    class_name="text-davs-color-morado-claro text-lg text-center w-full py-20",
-                ),
+                card_proyecto(INFORMACION_PROYECTOS["proyecto_sql_1"]),
+                card_proyecto(INFORMACION_PROYECTOS["proyecto_sql_2"]),
                 class_name=PROYECTOS_BODY_BASE,
             ),
             spacing="0",
