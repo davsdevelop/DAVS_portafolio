@@ -38,9 +38,15 @@
         "link_app": "https://davs-mecanografia-test-ui.onrender.com",
         "imagen": "/imagenes/proyectos/reflex/DAVS_mecanografia_test.png"
     },
+    "proyecto_reflex_3": {
+        "titulo": "DAVS Mis Colores: Generador de Paletas Web",
+        "descripcion": "Aplicación web Full-Stack construida enteramente en Python mediante el framework Reflex. Este gestor permite a los usuarios generar paletas de colores aleatorias, visualizar combinaciones en tiempo real y copiar códigos hexadecimales al portapapeles. A nivel arquitectónico, implementa una gestión de estado (State Management) avanzada utilizando herencia de clases para separar la lógica de interfaz de la lógica de negocio. Los datos se persisten localmente utilizando SQLite y SQLModel, permitiendo a los usuarios guardar, editar y eliminar sus paletas favoritas. La interfaz gráfica fue diseñada con un enfoque Dark Mode moderno, empleando componentes circulares y variables dinámicas de Tailwind CSS integradas directamente desde Python.",
+        "link_repositorio": "https://github.com/davsdevelop/DAVS_Mis_Colores",
+        "link_app": "https://davs-mis-colores.onrender.com",
+        "imagen": "/imagenes/proyectos/reflex/DAVS_Mis_Colores.png"
+    },
 
-
-
+    
     "proyecto_django_1": {
         "titulo": "DAVS Gestor Biblioteca: Arquitectura MVT con Django",
         "descripcion": "Sistema web full-stack desarrollado para la gestión de inventario y préstamos de una biblioteca. Construido sobre el framework Django, el proyecto implementa rigurosamente el patrón arquitectónico MVT (Model-View-Template). Destaca por el diseño de una base de datos relacional estricta usando Django ORM y SQLite, asegurando la integridad de los datos mediante Claves Foráneas (Foreign Keys). En la capa lógica, incorpora ModelForms para validación automatizada y el patrón PRG (Post/Redirect/Get) junto con el sistema nativo de Messages de Django para un flujo de usuario seguro. La interfaz de usuario fue diseñada desde cero utilizando HTML5 y CSS3 nativo (Variables y Flexbox), logrando una presentación moderna y responsiva sin dependencias externas.",

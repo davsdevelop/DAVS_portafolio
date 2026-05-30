@@ -118,8 +118,9 @@ def proyectos_reflex() -> rx.Component:
                 class_name=PROYECTOS_HEADER_BASE,
             ),
             rx.box(
-                card_proyecto(INFORMACION_PROYECTOS["proyecto_reflex_1"]),
+                card_proyecto(INFORMACION_PROYECTOS["proyecto_reflex_3"]),
                 card_proyecto(INFORMACION_PROYECTOS["proyecto_reflex_2"]),
+                card_proyecto(INFORMACION_PROYECTOS["proyecto_reflex_1"]),
                 class_name=PROYECTOS_BODY_BASE,
             ),
             spacing="0",
