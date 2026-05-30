@@ -183,11 +183,19 @@ CONTACTO_TEXTO_LINK = "text-davs-color-morado-claro text-lg font-medium hover:te
 
 
 # ==========================================
-# FOOTER STYLES
+# FOOTER STYLES (Actualizado)
 # ==========================================
 FOOTER_BASE = (
-    "w-full h-[70px] bg-davs-color-base "
-    "flex justify-between items-center px-60 " 
-    "border-t border-[#1A2332]"
+    "w-full bg-davs-color-base border-t border-[#1A2332] "
+    # 1. ESTILOS PARA MÓVIL (Por defecto)
+    # Columna, centrado, gap entre textos, padding lateral pequeño y margen abajo (pb-20) para el logo
+    "flex flex-col items-center justify-center gap-2 py-6 px-4 pb-20 "
+    
+    # 2. ESTILOS PARA ESCRITORIO (Prefijo md:)
+    # Fila, separados a los extremos, altura fija de 70px
+    "md:flex-row md:justify-between md:py-0 md:h-[70px] "
+    # Padding izquierdo normal, y padding derecho extra (pr-32 o pr-40) para esquivar el logo
+    "md:pl-20 md:pr-40" 
 )
-FOOTER_TEXT = "text-sm font-medium text-davs-color-morado-oscuro"
+
+FOOTER_TEXT = "text-sm font-medium text-davs-color-morado-oscuro text-center md:text-left"
