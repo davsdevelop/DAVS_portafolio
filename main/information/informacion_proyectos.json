@@ -3,7 +3,7 @@
         "titulo": "DAVS GeoCalc: Calculadora Geométrica en Python Puro",
         "descripcion": "Una calculadora geométrica interactiva basada en consola y escrita en Python puro. Cuenta con una interfaz visual limpia utilizando arte ASCII y una arquitectura modular diseñada para escalar e incorporar fácilmente nuevas figuras 2D, sólidos 3D y sus respectivas fórmulas matemáticas.",
         "link_repositorio": "https://github.com/davsdevelop/DAVS_python_calculadora_geometrica",
-        "link_app": "http",
+        "link_app": "",
         "imagen": "/imagenes/proyectos/python/DAVS_calculadora_geometrica.png"
     },
 
