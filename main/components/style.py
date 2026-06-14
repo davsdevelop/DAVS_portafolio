@@ -196,13 +196,13 @@ ML_CARD_BASE = (
 ML_CARD_ROW_BOX = "w-full h-auto flex flex-col items-start justify-center"
 ML_HEADER_TITULO_PRINCIPAL = "text-davs-color-morado-claro text-3xl font-bold "
 ML_BODY_FOTO_BASE = (
-    "h-[300] w-[300] "           # Nuevo tamaño fijo 500x500
+    "h-[250px] w-[400px] "         
     "bg-davs-color-base "            # Mantiene el color de fondo base
     "overflow-hidden "               # Mantiene para asegurar que nada se salga
     "flex justify-center items-center" # Centra la imagen
 )
 ML_BODY_FOTO = (
-    "w-full h-full object-cover"    # Cubre el contenedor perfectamente (sin zoom)
+    "w-full h-full object-contain"    # Cubre el contenedor perfectamente (sin zoom)
 )
 ML_BOTON_ANIMACION_BASE = (
     "h-[60px] w-[60px] rounded-full " 
