@@ -75,12 +75,17 @@ def body_estudios() -> rx.Component:
                     rx.text(INFORMACION_ESTUDIOS["grupo2"]["titulo"], class_name=ESTUDIOS_CARD_HEADER_GRUPO_TITULO_TEXT),
                     class_name=ESTUDIOS_CARD_HEADER_GRUPO_TITULO,
                 ),
+                crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_7"]),
+                crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_8"]),
+                crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_9"]),
+                crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_10"]),
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_1"]),
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_2"]),
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_3"]),
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_4"]),
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_5"]),
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_6"]),
+  
                 class_name=ESTUDIOS_CARD_BASE,  # ← keyword al final
             ),
             spacing="0",

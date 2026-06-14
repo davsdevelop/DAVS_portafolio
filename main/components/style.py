@@ -97,33 +97,34 @@ PROYECTOS_CARD_DESC_IMG_ZOOM = "w-full h-auto max-h-[90vh] object-contain rounde
 PROYECTOS_CARD_DESC_IMG_ZOOM_CERRAR = "mt-4 px-6 py-2 bg-[#0E151F] text-white border border-[#00D1B3] hover:bg-[#00D1B3] hover:text-black rounded-lg transition-colors cursor-pointer"
 
 
+#
 # ==========================================
 # EXPERIENCIA STYLES 
 # ==========================================
 EXPERIENCIA_HEADER_BASE = "w-full h-[60px] flex justify-center items-center"
 EXPERIENCIA_HEADER_TITULO_PRINCIPAL = "text-davs-color-morado-claro text-3xl font-bold"
-EXPERIENCIA_BODY_BASE = "w-full min-h-screen py-12 px-8 md:px-24 grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center items-start"
+EXPERIENCIA_BODY_BASE = "w-full min-h-screen py-12 px-8 md:px-24 grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center"
 EXPERIENCIA_CARD_BASE = (
-    "w-full max-w-2xl h-auto min-h-[300px] flex flex-col "
+    "w-full max-w-2xl h-full min-h-[300px] flex flex-col "
     "bg-[#0E151F] rounded-xl overflow-hidden shadow-lg "
     "border border-[#00D1B3]"
 )
 # ==== EXPERIENCIA CARD - HEADER
 EXPERIENCIA_CARD_HEADER_BASE = "w-full h-auto min-h-[70px] bg-davs-color-base px-4 py-4 flex flex-row items-center border-b border-davs-color-cian"
-EXPERIENCIA_CARD_HEADER_TITULO_BOX = "flex-1 h-auto flex flex-col justify-center"          # ← CORREGIDO: era w-[80%], suma > 100%
+EXPERIENCIA_CARD_HEADER_TITULO_BOX = "flex-1 h-auto flex flex-col justify-center"         
 EXPERIENCIA_CARD_HEADER_TITULO_TEXT = "text-white font-bold"
 EXPERIENCIA_CARD_HEADER_SUBTITULO_TEXT = "text-[#00D1B3] text-sm"
-EXPERIENCIA_CARD_HEADER_FECHA_BOX = "w-auto h-auto flex flex-col items-end justify-center shrink-0 pl-4"  # ← CORREGIDO: era w-[25%], ahora shrink-0
+EXPERIENCIA_CARD_HEADER_FECHA_BOX = "w-auto h-auto flex flex-col items-end justify-center shrink-0 pl-4"  
 EXPERIENCIA_CARD_HEADER_FECHA_TEXT = "text-white text-sm text-right"
 # ==== EXPERIENCIA CARD - BODY 
-EXPERIENCIA_CARD_BODY_BASE = "w-full flex-1 flex flex-col md:flex-row"                      # ← CORREGIDO: era solo flex-row, roto en mobile
-EXPERIENCIA_CARD_BODY_DESCRIPCION_BOX = "w-full md:w-[60%] h-auto p-6 pb-8 flex flex-col justify-start"   # ← CORREGIDO: w-full en mobile
+EXPERIENCIA_CARD_BODY_BASE = "w-full flex-1 flex flex-col md:flex-row"                      
+EXPERIENCIA_CARD_BODY_DESCRIPCION_BOX = "w-full md:w-[60%] h-auto p-6 pb-8 flex flex-col justify-start"   
+EXPERIENCIA_CARD_BODY_DEFINICION_TEXT = "text-gray-300 text-justify mb-4 leading-relaxed"
 EXPERIENCIA_CARD_BODY_DESCRIPCION_LISTA = "list-disc ml-6 space-y-2 text-gray-300"
-EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_BOX = "w-full md:w-[40%] h-full p-4 flex justify-center items-center"  # ← CORREGIDO: w-full en mobile
+EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_BOX = "w-full md:w-[40%] h-full p-4 flex justify-center items-center"  
 EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG = "w-full h-auto object-contain rounded-lg border border-gray-700 cursor-zoom-in hover:opacity-80 transition-opacity"
 EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_ZOOM = "w-full h-auto max-h-[90vh] object-contain rounded-xl"
 EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_ZOOM_CERRAR = "mt-4 px-6 py-2 bg-[#0E151F] text-white border border-[#00D1B3] hover:bg-[#00D1B3] hover:text-black rounded-lg transition-colors cursor-pointer"
-
 
 # ==========================================
 # ESTUDIOS STYLES 
@@ -182,6 +183,41 @@ CONTACTO_LOGO_ICON = "text-davs-color-cian"
 CONTACTO_TEXTO_LINK = "text-davs-color-morado-claro text-lg font-medium hover:text-white transition-colors cursor-pointer"
 
 
+
+# ==========================================
+# ML STYLES
+# ==========================================
+ML_BODY_BASE = "w-full h-auto py-4 px-8 md:px-24 flex flex-col gap-8 items-center justify-center"
+ML_CARD_BASE = (
+    "w-full max-w-xl h-auto flex flex-col justify-center items-center "
+    "bg-[#0E151F] rounded-xl overflow-hidden shadow-lg py-12 px-8 " # <-- AÑADIDO px-8
+    "border border-[#00D1B3]"   
+)
+ML_CARD_ROW_BOX = "w-full h-auto flex flex-col items-start justify-center"
+ML_HEADER_TITULO_PRINCIPAL = "text-davs-color-morado-claro text-3xl font-bold "
+ML_BODY_FOTO_BASE = (
+    "h-[300] w-[300] "           # Nuevo tamaño fijo 500x500
+    "bg-davs-color-base "            # Mantiene el color de fondo base
+    "overflow-hidden "               # Mantiene para asegurar que nada se salga
+    "flex justify-center items-center" # Centra la imagen
+)
+ML_BODY_FOTO = (
+    "w-full h-full object-cover"    # Cubre el contenedor perfectamente (sin zoom)
+)
+ML_BOTON_ANIMACION_BASE = (
+    "h-[60px] w-[60px] rounded-full " 
+    "flex justify-center items-center " 
+    "bg-davs-color-base "               
+)
+ML_LOGO_IMG = "h-full w-full object-contain p-[14px] "
+ML_LOGO_ICON = "text-davs-color-cian"
+
+ML_TEXTO_NORMAL = "text-davs-color-morado-claro text-lg font-medium"
+
+# Estilo con efecto hover exclusivo para los enlaces
+ML_TEXTO_LINK = "text-davs-color-morado-claro text-lg font-medium hover:text-white transition-colors"
+
+
 # ==========================================
 # FOOTER STYLES (Actualizado)
 # ==========================================
@@ -199,3 +235,6 @@ FOOTER_BASE = (
 )
 
 FOOTER_TEXT = "text-sm font-medium text-davs-color-morado-oscuro text-center md:text-left"
+
+
+

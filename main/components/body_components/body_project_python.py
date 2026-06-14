@@ -119,6 +119,8 @@ def proyectos_python() -> rx.Component:
             ),
             rx.box(
                 card_proyecto(INFORMACION_PROYECTOS["proyecto_python_1"]),
+                card_proyecto(INFORMACION_PROYECTOS["proyecto_python_2"]),
+                card_proyecto(INFORMACION_PROYECTOS["proyecto_python_3"]),
                 class_name=PROYECTOS_BODY_BASE,
             ),
             spacing="0",

@@ -3,11 +3,17 @@
         "saludo": "Hola, mi nombre es",
         "nombre": "Diego Arturo Videla Silva",
         "fotografia": "/davs/DAVS_OK.png",
-        "cargo": "FULL-STACK SOFTWARE ENGINEER | MIDDLEWARE & BACKEND SPECIALIST",
-        "descripcion": "Ingeniero en Automatización y Robótica con sólida trayectoria en desarrollo de software y gran capacidad de aprendizaje autónomo. Especialista en arquitecturas de integración Middleware y desarrollo Backend, con foco en conectar soluciones digitales con entornos operativos eficientes. Profesional analítico y adaptable, enfocado en resolver problemas complejos de forma colaborativa.",
+        "cargo": "INGENIERO BACKEND & MIDDLEWARE | ESPECIALISTA EN PYTHON",
+        "descripcion": "Ingeniero Backend especializado en el ecosistema Python, con sólida trayectoria en desarrollo de software y gran capacidad de aprendizaje autónomo . Poseo experiencia destacada en el diseño e implementación de APIs y microservicios escalables, integrando soluciones Backend modernas con entornos operativos eficientes. Cuento con un trasfondo técnico en ingeniería de automatización e integración Middleware , complementado con conocimientos y aplicación práctica en Inteligencia Artificial, Machine Learning y análisis de datos.",
         "linkedin_link": "https://www.linkedin.com/in/diego-arturo-videla-silva-83b495188/",
         "davs_email": "dvidelasilva@gmail.com",
         "davs_ubicacion": "Buin, Chile",
         "CV": "/documentos/DAVS_CV_Dev.pdf"
+    },
+    "blog":{
+        "fotografia": "/davs/neuromblog_blanco.png",
+        "titulo": "Te invito a visitar Neuro-MBlog",
+        "descripcion": "Un lugar para entusiastas del Machine Learning y las Redes Neuronales. Compartimos desde el núcleo teórico más sólido hasta lo último en noticias. Si te gusta entender qué ocurre detrás del 'cerebro' de las máquinas, este es tu sitio. ¡Sumérgete y aprendamos juntos!",
+        "blog_link": "https://neuromblog.blogspot.com/"
     }
 }

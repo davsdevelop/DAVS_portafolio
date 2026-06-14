@@ -6,6 +6,20 @@
         "link_app": "",
         "imagen": "/imagenes/proyectos/python/DAVS_calculadora_geometrica.png"
     },
+    "proyecto_python_2": {
+        "titulo": "DAVS Red Neuronal Desde Cero (MLP)",
+        "descripcion": "Perceptrón Multicapa desarrollado utilizando lógica matemática pura sin librerías de terceros (como TensorFlow o PyTorch). Incluye Forward Propagation y Backpropagation para resolver problemas de clasificación no lineal.",
+        "link_repositorio": "https://github.com/davsdevelop/red_neuronal_xor",
+        "link_app": "",
+        "imagen": "/imagenes/proyectos/python/DAVS_red_neuronal_xor.png"
+    },
+    "proyecto_python_3": {
+        "titulo": "Limpieza y Deduplicación Criptográfica",
+        "descripcion": "Herramienta CLI para la organización automática de sistemas de archivos. Utiliza hashing criptográfico (SHA-256) leyendo en chunks de memoria para aislar archivos duplicados exactos y clasificar el resto por extensión de forma robusta.",
+        "link_repositorio": "https://github.com/davsdevelop/organizador_archivos",
+        "link_app": "",
+        "imagen": "/imagenes/proyectos/python/DAVS_organizador_archivos.png"
+    },
 
 
     "proyecto_fastapi_1": {

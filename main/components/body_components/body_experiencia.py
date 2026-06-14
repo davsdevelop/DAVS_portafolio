@@ -16,18 +16,18 @@ from ..style import (
     EXPERIENCIA_CARD_HEADER_FECHA_TEXT,
     EXPERIENCIA_CARD_BODY_BASE,
     EXPERIENCIA_CARD_BODY_DESCRIPCION_BOX,
+    EXPERIENCIA_CARD_BODY_DEFINICION_TEXT,
     EXPERIENCIA_CARD_BODY_DESCRIPCION_LISTA,
     EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_BOX,
     EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG,
     EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_ZOOM,
-    EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_ZOOM_CERRAR,
+    EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_ZOOM_CERRAR
 )
 
 
 RUTA_JSON = Path(__file__).resolve().parent.parent.parent / "information" / "informacion_experiencia.json"
 with open(RUTA_JSON, "r", encoding="utf-8") as archivo:
     INFORMACION_EXPERIENCIA = json.load(archivo)
-
 
 
 def body_experiencia() -> rx.Component:
@@ -67,12 +67,12 @@ def body_experiencia() -> rx.Component:
                     rx.box(
                         # Descripcion
                         rx.box(
+                            rx.text(INFORMACION_EXPERIENCIA["experiencia_1"]["definicion"], class_name=EXPERIENCIA_CARD_BODY_DEFINICION_TEXT),
                             rx.unordered_list(
                                 *[
                                     rx.list_item(punto) 
                                     for punto in INFORMACION_EXPERIENCIA["experiencia_1"]["descripcion"]
                                 ],
-                                color="text-gray-300",
                                 class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_LISTA
                             ),
                             class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_BOX,
@@ -143,12 +143,12 @@ def body_experiencia() -> rx.Component:
                     rx.box(
                         # Descripcion
                         rx.box(
+                            rx.text(INFORMACION_EXPERIENCIA["experiencia_2"]["definicion"], class_name=EXPERIENCIA_CARD_BODY_DEFINICION_TEXT),
                             rx.unordered_list(
                                 *[
                                     rx.list_item(punto) 
                                     for punto in INFORMACION_EXPERIENCIA["experiencia_2"]["descripcion"]
                                 ],
-                                color="text-gray-300",
                                 class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_LISTA
                             ),
                             class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_BOX,
@@ -219,12 +219,12 @@ def body_experiencia() -> rx.Component:
                     rx.box(
                         # Descripcion
                         rx.box(
+                            rx.text(INFORMACION_EXPERIENCIA["experiencia_3"]["definicion"], class_name=EXPERIENCIA_CARD_BODY_DEFINICION_TEXT),
                             rx.unordered_list(
                                 *[
                                     rx.list_item(punto) 
                                     for punto in INFORMACION_EXPERIENCIA["experiencia_3"]["descripcion"]
                                 ],
-                                color="text-gray-300",
                                 class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_LISTA
                             ),
                             class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_BOX,
@@ -295,12 +295,12 @@ def body_experiencia() -> rx.Component:
                     rx.box(
                         # Descripcion
                         rx.box(
+                            rx.text(INFORMACION_EXPERIENCIA["experiencia_4"]["definicion"], class_name=EXPERIENCIA_CARD_BODY_DEFINICION_TEXT),
                             rx.unordered_list(
                                 *[
                                     rx.list_item(punto) 
                                     for punto in INFORMACION_EXPERIENCIA["experiencia_4"]["descripcion"]
                                 ],
-                                color="text-gray-300",
                                 class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_LISTA
                             ),
                             class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_BOX,
@@ -371,6 +371,7 @@ def body_experiencia() -> rx.Component:
                     rx.box(
                         # Descripcion
                         rx.box(
+                            rx.text(INFORMACION_EXPERIENCIA["experiencia_5"]["definicion"], class_name=EXPERIENCIA_CARD_BODY_DEFINICION_TEXT),
                             rx.unordered_list(
                                 *[
                                     rx.list_item(punto) 
@@ -426,3 +427,5 @@ def body_experiencia() -> rx.Component:
         ),
         class_name=BODY,
     )
+
+

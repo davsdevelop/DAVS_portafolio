@@ -4,6 +4,7 @@
         "subtitulo": "APIUX - FACTORY AI",
         "fecha_inicio": "Mayo - 2025",
         "fecha_fin": "Febrero - 2026",
+        "definicion": "Responsable del desarrollo técnico de soluciones de IA, diseñando e implementando microservicios de backend para orquestar agentes inteligentes y procesar modelos LLM, mejorando las capacidades de procesamiento de lenguaje natural.",
         "descripcion": [
             "Implementación de arquitecturas backend modernas enfocadas en la orquestación de agentes de IA.",
             "Diseño y despliegue de APIs de alto rendimiento con FastAPI.",
@@ -12,14 +13,17 @@
         "imagen": "/imagenes/experiencia/Experiencia_laboral_FactoryAI.jpg"
     },
     "experiencia_2": {
-        "titulo": "Ingeniero de Integración Middleware",
+        "titulo": "Ingeniero de Integración Middleware - Desarrollador Backend",
         "subtitulo": "APIUX - COOPEUCH",
         "fecha_inicio": "Enero - 2023",
         "fecha_fin": "Mayo - 2025",
+        "definicion": "Encargado de liderar la modernización y expansión técnica de la plataforma de integración en el sector financiero para el servicio Dale Coopeuch, actualizando servicios transaccionales críticos e integrando sistemas legados con ecosistemas en la nube (AWS), optimizando la escalabilidad operativa mediante el desarrollo de microservicios.",
         "descripcion": [
-            "Lideré la modernización de servicios transaccionales críticos usando Apache Camel y JBoss Fuse.",
+            "Lideré el desarrollo, la modernización y mantención de servicios transaccionales críticos usando Apache Camel y JBoss Fuse.",
             "Integré sistemas legados con ecosistemas Cloud (AWS) mediante mensajería asíncrona.",
-            "Desarrollé microservicios escalables en Node.js (NestJS) para expansión de capacidades backend."
+            "Desarrollé microservicios escalables en Node.js (NestJS) para expansión de capacidades backend.",
+            "Desarrollé e implementé el servicio de seguridad 3DS de Mastercard para Coopeuch.",
+            "Realicé trabajos de integración entre el core de Coopeuch y el backend para el lanzamiento de créditos digitales."
         ],
         "imagen": "/imagenes/experiencia/Experiencia_laboral_coopeuch.jpg"
     },
@@ -28,6 +32,7 @@
         "subtitulo": "SOAINT - TRANSELEC",
         "fecha_inicio": "Diciembre - 2022",
         "fecha_fin": "Enero - 2023",
+        "definicion": "Responsable de modernizar la capa de integración técnica para sistemas críticos en el sector energético, implementando patrones empresariales modernos para asegurar la escalabilidad de la infraestructura.",
         "descripcion": [
             "Modernización de la capa de integración para sistemas críticos del sector energético.",
             "Implementación de Patrones de Integración Empresarial (EIP) para asegurar escalabilidad."
@@ -39,6 +44,7 @@
         "subtitulo": "FREELANCE",
         "fecha_inicio": "Enero - 2020",
         "fecha_fin": "Enero - 2023",
+        "definicion": "Responsable del desarrollo e implementación de soluciones tecnológicas personalizadas, abarcando desde sistemas inteligentes de visión artificial para control de calidad hasta la creación de ecosistemas IoT con conectividad en tiempo real a la nube.",
         "descripcion": [
             "Visión Artificial (Agro): Sistema inteligente en Python y OpenCV para detección de mermas en cranberries, automatizando el control de calidad.",
             "Ecosistemas IoT: Conectividad en tiempo real de dispositivos industriales a la nube vía MQTT y microservicios personalizados."
@@ -50,6 +56,7 @@
         "subtitulo": "Equipos Médicos Zepeda",
         "fecha_inicio": "Junio - 2018",
         "fecha_fin": "Octubre - 2021",
+        "definicion": "Encargado del diseño de sistemas de control automatizados para la optimización de procesos de reparación técnica, además de brindar liderazgo y mentoría en proyectos tecnológicos para alumnos en práctica.",
         "descripcion": [
             "Diseño de sistemas de control automatizados para optimizar el flujo de reparaciones técnicas.",
             "Liderazgo y mentoría de proyectos tecnológicos para alumnos en práctica profesional."

@@ -8,11 +8,13 @@ from .components.body_components.body_home import body_home
 from .pages.experiencia_page import experiencia_page
 from .pages.estudios_page import estudios_page
 from .pages.contacto_page import sobre_mi_page
+from .pages.ml_page import ml_page
 from .pages.projects_pages.python_page import proyectos_python_page
 from .pages.projects_pages.fastapi_page import proyectos_fastapi_page
 from .pages.projects_pages.django_page import proyectos_django_page
 from .pages.projects_pages.reflex_page import proyectos_reflex_page
 from .pages.projects_pages.sql_page import proyectos_sql_page
+
 
 
 def index() -> rx.Component:
@@ -47,3 +49,4 @@ app.add_page(proyectos_fastapi_page(), route="/proyectosfastapi")
 app.add_page(proyectos_django_page(), route="/proyectosdjango")
 app.add_page(proyectos_reflex_page(), route="/proyectosreflex")
 app.add_page(proyectos_sql_page(), route="/proyectossql")
+app.add_page(ml_page(), route="/proyectosML")

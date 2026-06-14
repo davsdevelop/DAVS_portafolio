@@ -135,6 +135,7 @@ def body_home() -> rx.Component:
                         proyecto_icon_with_separator(img_src="/logos/django_logo.png", href="/proyectosdjango", technology_name="Django"),
                         proyecto_icon_with_separator(img_src="/logos/reflex_logo.png", href="/proyectosreflex", technology_name="Reflex"),
                         proyecto_icon_with_separator(img_src="/logos/sql_logo.png", href="/proyectossql", technology_name="SQL"),
+                        proyecto_icon_with_separator(img_src="/logos/ML_logo.png", href="/proyectosML", technology_name="Machine Learning"),
                         
                         spacing="0",
                     ),

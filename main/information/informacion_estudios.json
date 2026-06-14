@@ -23,9 +23,6 @@
         "institucion": "Universidad INACAP",
         "link_certificado": "/documentos/certificados/DAVS_Titulo.pdf"
     },
-
-
-
     "grupo2": {
         "titulo": "Certificaciones & Cursos"
     },
@@ -52,7 +49,6 @@
         "link_certificado1": "/documentos/certificados/DAVS_Backend_I.pdf",
         "link_certificado2": "/documentos/certificados/DAVS_Backend_II.pdf",
         "link_certificado3": "/documentos/certificados/DAVS_Backend_III.pdf"
-
     },
     "estudio_2_4": {
         "titulo": "Programación Java",
@@ -74,6 +70,33 @@
         "fecha_fin": "Diciembre - 2021",
         "institucion": "Cisco Networking Academy Course",
         "link_certificado": "/documentos/certificados/DAVS_python_cisco.pdf"
+    },
+    "estudio_2_7": {
+        "titulo": "Desarrollo Web Full-Stack con Python y Reflex",
+        "fecha_inicio": "Enero - 2026",
+        "fecha_fin": "Abril - 2026",
+        "institucion": "Udemy",
+        "link_certificado": "/documentos/certificados/DAVS_reflex.pdf"
+    },
+    "estudio_2_8": {
+        "titulo": "FastAPI: Crea APIs eficientes con Python",
+        "fecha_inicio": "Enero - 2026",
+        "fecha_fin": "Abril - 2026",
+        "institucion": "Udemy",
+        "link_certificado": "/documentos/certificados/DAVS_fastapi.pdf"
+    },
+    "estudio_2_9": {
+        "titulo": "Power BI - El bootcamp completo de Power BI",
+        "fecha_inicio": "Enero - 2026",
+        "fecha_fin": "Abril - 2026",
+        "institucion": "Udemy",
+        "link_certificado": "/documentos/certificados/DAVS_powerbi.pdf"
+    },
+    "estudio_2_10": {
+        "titulo": "Análisis y Visualización de Datos con Tableau",
+        "fecha_inicio": "Enero - 2026",
+        "fecha_fin": "Abril - 2026",
+        "institucion": "Udemy",
+        "link_certificado": "/documentos/certificados/DAVS_tableau.pdf"
     }
-
 }
