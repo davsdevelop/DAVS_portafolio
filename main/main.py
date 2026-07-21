@@ -14,6 +14,8 @@ from .pages.projects_pages.fastapi_page import proyectos_fastapi_page
 from .pages.projects_pages.django_page import proyectos_django_page
 from .pages.projects_pages.reflex_page import proyectos_reflex_page
 from .pages.projects_pages.sql_page import proyectos_sql_page
+from .pages.projects_pages.nestjs_page import proyectos_nestjs_page
+from .pages.projects_pages.react_page import proyectos_react_page
 
 
 @rx.page(
@@ -54,3 +56,5 @@ app.add_page(proyectos_django_page(), route="/proyectosdjango", title="DAVSporta
 app.add_page(proyectos_reflex_page(), route="/proyectosreflex", title="DAVSportafolio | Reflex")
 app.add_page(proyectos_sql_page(), route="/proyectossql", title="DAVSportafolio | SQL")
 app.add_page(ml_page(), route="/proyectosML", title="DAVSportafolio | Machine Learning")
+app.add_page(proyectos_nestjs_page(), route="/proyectosnestjs", title="DAVSportafolio | NestJS")
+app.add_page(proyectos_react_page(), route="/proyectosreact", title="DAVSportafolio | React")

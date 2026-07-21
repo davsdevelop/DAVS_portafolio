@@ -130,19 +130,40 @@ def body_home() -> rx.Component:
                             class_name=BODY_HOME_PROYECTOS_TITULO,
                         ),
 
-                        proyecto_icon_with_separator(img_src="/logos/python_logo.png", href="/proyectospython", technology_name="Python"),
-                        proyecto_icon_with_separator(img_src="/logos/fastapi_logo.png", href="/proyectosfastapi", technology_name="FastAPI"),
-                        proyecto_icon_with_separator(img_src="/logos/django_logo.png", href="/proyectosdjango", technology_name="Django"),
-                        proyecto_icon_with_separator(img_src="/logos/reflex_logo.png", href="/proyectosreflex", technology_name="Reflex"),
-                        proyecto_icon_with_separator(img_src="/logos/sql_logo.png", href="/proyectossql", technology_name="SQL"),
-                        proyecto_icon_with_separator(img_src="/logos/ML_logo.png", href="/proyectosML", technology_name="Machine Learning"),
+                        # AQUI ESTÁ EL CAMBIO: Un hstack para alinear dos vstack (columnas) horizontalmente
+                        rx.hstack(
+                            # --- COLUMNA 1 ---
+                            rx.vstack(
+                                proyecto_icon_with_separator(img_src="/logos/python_logo.png", href="/proyectospython", technology_name="Python"),
+                                proyecto_icon_with_separator(img_src="/logos/fastapi_logo.png", href="/proyectosfastapi", technology_name="FastAPI"),
+                                proyecto_icon_with_separator(img_src="/logos/django_logo.png", href="/proyectosdjango", technology_name="Django"),
+                                proyecto_icon_with_separator(img_src="/logos/reflex_logo.png", href="/proyectosreflex", technology_name="Reflex"),
+                                proyecto_icon_with_separator(img_src="/logos/sql_logo.png", href="/proyectossql", technology_name="SQL"),
+                                proyecto_icon_with_separator(img_src="/logos/ML_logo.png", href="/proyectosML", technology_name="Machine Learning"),
+                                spacing="0",
+                            ),
+                            
+                            # --- COLUMNA 2 (Duplicada) ---
+                            rx.vstack(
+                                proyecto_icon_with_separator(img_src="/logos/nestjs_logo.png", href="/proyectosnestjs", technology_name="NestJS"),
+                                proyecto_icon_with_separator(img_src="/logos/react_logo.png", href="/proyectosreact", technology_name="React"),
+                                spacing="0",
+                            ),
+
+                            
+                            gap="6rem", # Separación horizontal entre las dos columnas
+                            justify_content="center", # Centra ambas columnas dentro del contenedor
+                            width="100%",
+      
+                        ),
                         
                         spacing="0",
                     ),
+                    
                     class_name=BODY_HOME_PROYECTOS_BASE,
                 ),
                 class_name=COL_SPAN_1, 
-            ),
+            ),          
             class_name=GRID_3_COLS,
         ),
         class_name=BODY,

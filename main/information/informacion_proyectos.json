@@ -91,6 +91,21 @@
         "link_repositorio": "https://github.com/davsdevelop/DAVS_Wikihorrorbook_data",
         "link_app": "",
         "imagen": "/imagenes/proyectos/sql/DAVS_Wikihorrorbook_data.png"
-    }
+    },
 
+    "proyecto_nestjs_1": {
+        "titulo": "DAVS Terror Book API: Arquitectura Modular con NestJS",
+        "descripcion": "Desarrollo del backend y lógica de negocio para el sistema de gestión de una colección literaria. Construido con el framework NestJS bajo el entorno Node.js, el proyecto implementa una rigurosa arquitectura modular basada en el patrón de inyección de dependencias (Controladores, Servicios y Módulos). Expone una API RESTful robusta, utilizando DTOs (Data Transfer Objects) estructurados para la validación tipada de datos en las peticiones entrantes. Destaca por su lógica de paginación en el servidor, algoritmos de búsqueda avanzada con normalización de caracteres, y el manejo eficiente de archivos estáticos para la distribución de los recursos multimedia.",
+        "link_repositorio": "https://github.com/davsdevelop/davs_react_terror_book_backend",
+        "link_app": "https://davs-react-terror-book-frontend.onrender.com/",
+        "imagen": "/imagenes/proyectos/nestjs_react/DAVS_terror_book.png"
+    },
+
+    "proyecto_react_1": {
+        "titulo": "DAVS Terror Book UI: SPA con React y TanStack Query",
+        "descripcion": "Desarrollo de la interfaz de cliente para el ecosistema de la biblioteca del terror. Construido como una Single Page Application (SPA) utilizando React y Vite, el proyecto se enfoca fuertemente en el rendimiento y la reactividad. Implementa React Query (TanStack Query) para el consumo de la API, optimizando las peticiones HTTP, el manejo inteligente de la caché y los estados de carga. La interfaz (UI) fue diseñada utilizando Tailwind CSS junto con componentes accesibles de Shadcn UI, logrando un diseño inmersivo, oscuro y completamente responsivo. En la capa lógica, utiliza Context API para la gestión global de estados (como los libros favoritos) y React Router para la navegación estructurada.",
+        "link_repositorio": "https://github.com/davsdevelop/davs_react_terror_book_frontend",
+        "link_app": "https://davs-react-terror-book-frontend.onrender.com/",
+        "imagen": "/imagenes/proyectos/nestjs_react/DAVS_terror_book.png"
+    }
 }
