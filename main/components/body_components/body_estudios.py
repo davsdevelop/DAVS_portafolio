@@ -75,6 +75,8 @@ def body_estudios() -> rx.Component:
                     rx.text(INFORMACION_ESTUDIOS["grupo2"]["titulo"], class_name=ESTUDIOS_CARD_HEADER_GRUPO_TITULO_TEXT),
                     class_name=ESTUDIOS_CARD_HEADER_GRUPO_TITULO,
                 ),
+                crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_12"]),
+                crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_11"]),
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_7"]),
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_8"]),
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_9"]),

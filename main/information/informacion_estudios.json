@@ -98,5 +98,19 @@
         "fecha_fin": "Abril - 2026",
         "institucion": "Udemy",
         "link_certificado": "/documentos/certificados/DAVS_tableau.pdf"
+    },
+    "estudio_2_11": {
+        "titulo": "Curso Completo: LangChain, LangGraph y Agentes de IA",
+        "fecha_inicio": "Junio - 2026",
+        "fecha_fin": "Junio - 2026",
+        "institucion": "Udemy",
+        "link_certificado": "/documentos/certificados/DAVS_langchain.pdf"
+    },
+    "estudio_2_12": {
+        "titulo": "Curso MCP: Conecta LLMs y Agentes de IA",
+        "fecha_inicio": "Junio - 2026",
+        "fecha_fin": "Junio - 2026",
+        "institucion": "Udemy",
+        "link_certificado": "/documentos/certificados/DAVS_MCP.pdf"
     }
 }

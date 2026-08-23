@@ -27,6 +27,8 @@ def navbar(show_home: bool = True) -> rx.Component:
                         rx.menu.item(rx.link("Machine Learning", href="/proyectosML", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
                         rx.menu.item(rx.link("NestJS", href="/proyectosnestjs", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
                         rx.menu.item(rx.link("React", href="/proyectosreact", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        rx.menu.item(rx.link("Langchain", href="/proyectoslangchain", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        rx.menu.item(rx.link("MCP", href="/proyectosmcp", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
                         bg="#0a0f16", border="1px solid #00D1B3", border_radius="8px", padding="8px",
                     ),
                 ),
@@ -57,6 +59,8 @@ def navbar(show_home: bool = True) -> rx.Component:
                         rx.menu.item(rx.link("• Machine Learning", href="/proyectosML", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
                         rx.menu.item(rx.link("• NestJS", href="/proyectosnestjs", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
                         rx.menu.item(rx.link("• React", href="/proyectosreact", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        rx.menu.item(rx.link("• Langchain", href="/proyectoslangchain", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        rx.menu.item(rx.link("• MCP", href="/proyectosmcp", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
                         rx.menu.separator(background_color="#1A2332"),
                         # ----------------------------------------------------
 

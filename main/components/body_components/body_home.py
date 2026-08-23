@@ -72,7 +72,6 @@ def body_home() -> rx.Component:
                 rx.box(
                     rx.vstack(
                         # PRESENTACION - Fotografia - Saludo - Nombre
-                        # CAMBIO: Una caja flex que cambia de columna (móvil) a fila (PC)
                         rx.box(
                             # Fotografia
                             rx.box(
@@ -91,7 +90,7 @@ def body_home() -> rx.Component:
                                         class_name=BODY_HOME_PRESENTACION_TEXTO_MI_NOMBRE
                                     ),
                                     spacing="0",
-                                    align_items="center", # Crucial para el centrado en móvil
+                                    align_items="center", 
                                 ),
                                 class_name="w-full md:w-auto flex flex-col items-center md:items-start"
                             ),
@@ -107,7 +106,7 @@ def body_home() -> rx.Component:
                             class_name=BODY_HOME_PRESENTACION_TEXTO_BIOGRAFIA
                         ),
                         spacing="0",
-                        align_items="center", # Alineación base para móvil
+                        align_items="center", 
                     ),
                     class_name=BODY_HOME_PRESENTACION_BASE
                 ),
@@ -120,50 +119,60 @@ def body_home() -> rx.Component:
             rx.box(
                 rx.box(
                     rx.vstack(
+                        # TÍTULO PRINCIPAL DE LA CAJA
                         rx.box(
                             rx.vstack(
-                                rx.text("PROYECTOS POR TECNOLOGÍA"),
+                                rx.text("PROYECTOS POR TECNOLOGÍA", text_align="center"),
                                 align_items="center", 
+                                justify_content="center",
                                 width="100%",
                                 spacing="2",
                             ),
                             class_name=BODY_HOME_PROYECTOS_TITULO,
+                            width="100%", # Aseguramos que el contenedor del título ocupe todo el ancho
                         ),
 
-                        # AQUI ESTÁ EL CAMBIO: Un hstack para alinear dos vstack (columnas) horizontalmente
+                        # COLUMNAS HORIZONTALES
                         rx.hstack(
-                            # --- COLUMNA 1 ---
+                            # --- COLUMNA 1: BACKEND ---
                             rx.vstack(
+                                rx.text("Backend - Frontend", font_weight="bold", margin_bottom="1em", white_space="nowrap"), 
                                 proyecto_icon_with_separator(img_src="/logos/python_logo.png", href="/proyectospython", technology_name="Python"),
                                 proyecto_icon_with_separator(img_src="/logos/fastapi_logo.png", href="/proyectosfastapi", technology_name="FastAPI"),
                                 proyecto_icon_with_separator(img_src="/logos/django_logo.png", href="/proyectosdjango", technology_name="Django"),
                                 proyecto_icon_with_separator(img_src="/logos/reflex_logo.png", href="/proyectosreflex", technology_name="Reflex"),
-                                proyecto_icon_with_separator(img_src="/logos/sql_logo.png", href="/proyectossql", technology_name="SQL"),
-                                proyecto_icon_with_separator(img_src="/logos/ML_logo.png", href="/proyectosML", technology_name="Machine Learning"),
-                                spacing="0",
-                            ),
-                            
-                            # --- COLUMNA 2 (Duplicada) ---
-                            rx.vstack(
                                 proyecto_icon_with_separator(img_src="/logos/nestjs_logo.png", href="/proyectosnestjs", technology_name="NestJS"),
                                 proyecto_icon_with_separator(img_src="/logos/react_logo.png", href="/proyectosreact", technology_name="React"),
                                 spacing="0",
+                                align_items="center", 
+                            ),
+                            
+                            # --- COLUMNA 2: IA ENGINEERING ---
+                            rx.vstack(
+                                rx.text("IA Engineering", font_weight="bold", margin_bottom="1em", white_space="nowrap"),
+                                proyecto_icon_with_separator(img_src="/logos/langchain_logo.png", href="/proyectoslangchain", technology_name="LangChain"),
+                                proyecto_icon_with_separator(img_src="/logos/MCP_logo.png", href="/proyectosmcp", technology_name="MCP"),
+                                proyecto_icon_with_separator(img_src="/logos/sql_logo.png", href="/proyectossql", technology_name="SQL"),
+                                proyecto_icon_with_separator(img_src="/logos/ML_logo.png", href="/proyectosML", technology_name="Machine Learning"),
+                                spacing="0",
+                                align_items="center", 
                             ),
 
-                            
-                            gap="6rem", # Separación horizontal entre las dos columnas
-                            justify_content="center", # Centra ambas columnas dentro del contenedor
+                            gap="6rem", 
+                            justify_content="center", 
                             width="100%",
-      
+                            align_items="start", 
                         ),
                         
                         spacing="0",
+                        align_items="center", # ESTO CENTRA TODO EL CONJUNTO (TÍTULO Y COLUMNAS)
+                        width="100%",
                     ),
                     
                     class_name=BODY_HOME_PROYECTOS_BASE,
                 ),
                 class_name=COL_SPAN_1, 
-            ),          
+            ),
             class_name=GRID_3_COLS,
         ),
         class_name=BODY,

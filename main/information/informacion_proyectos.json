@@ -107,5 +107,21 @@
         "link_repositorio": "https://github.com/davsdevelop/davs_react_terror_book_frontend",
         "link_app": "https://davs-react-terror-book-frontend.onrender.com/",
         "imagen": "/imagenes/proyectos/nestjs_react/DAVS_terror_book.png"
+    },
+
+    "proyecto_langchain_1": {
+        "titulo": "Asistente IA Multi-Usuario (LangChain + LangGraph)",
+        "descripcion": "Desarrollo de un agente de Inteligencia Artificial multi-usuario con memoria persistente. Construido sobre la base de LangChain, el núcleo del proyecto destaca por un uso avanzado de LangGraph para la orquestación mediante grafos de estado, gestionando eficientemente el ciclo de vida de la conversación y el ruteo lógico. Implementa bases de datos vectoriales (ChromaDB) para la extracción autónoma, almacenamiento semántico y recuperación de contexto a largo plazo (RAG). Además, integra SQLite para el control de checkpoints (hilos de conversación) y Ollama para el procesamiento LLM local, garantizando privacidad, inyección de contexto dinámico y un aislamiento total entre las sesiones de los usuarios.",
+        "link_repositorio": "https://github.com/davsdevelop/DAVS-langgraph-multi-user-chat",
+        "link_app": "/videos/LangGraph_multi_user_chat.mov", 
+        "imagen": "/imagenes/proyectos/langchain/DAVS_multiagente_chat.png"
+    },
+
+    "proyecto_mcp_1": {
+        "titulo": "Asistente IA con MCP (Gmail Server)",
+        "descripcion": "Implementación de un servidor basado en el estándar Model Context Protocol (MCP) para conectar de forma segura modelos de lenguaje locales (Ollama) con APIs empresariales de Google Workspace. El proyecto expone herramientas dinámicas (Function Calling) que permiten al agente leer, analizar y enviar correos mediante la API de Gmail, gestionando la sesión a través de OAuth2. Destaca por su capacidad para exponer recursos estáticos e inyectar contexto directamente desde manuales locales en PDF mediante 'Resource Templates', orquestando todo el flujo cliente-servidor a través de una interfaz reactiva construida con Streamlit.",
+        "link_repositorio": "https://github.com/davsdevelop/DAVS-gmail-mcp-server",
+        "link_app": "/videos/gmail_mcp_server.mov",
+        "imagen": "/imagenes/proyectos/mcp/DAVS_mcp_gmail.png"
     }
 }
