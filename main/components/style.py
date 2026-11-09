@@ -3,11 +3,11 @@
 # ==========================================
 NAVBAR_BASE = "w-full h-[70px] bg-davs-color-base sticky top-0 z-50"
 NAVBAR_LOGO_IMG = "h-[55px] w-auto ml-4 mt-2 object-contain"
-NAVBAR_LINK = "text-davs-color-morado-claro hover:!text-davs-color-morado-oscuro transition-colors cursor-pointer"
+NAVBAR_LINK = "text-davs-color-blanco transition-colors cursor-pointer"
 NAVBAR_LINK_TEXT = "text-davs-color-cian"
-NAVBAR_ELEMENTOS_INTERIOR = "px-6 md:pr-14 w-full flex justify-between items-center"
+NAVBAR_ELEMENTOS_INTERIOR = "h-full px-6 md:pr-14 w-full flex justify-between items-center"
 NAVBAR_MENU_ITEM = "group hover:bg-[#0E151F] cursor-pointer"
-NAVBAR_MENU_LINK = "!text-davs-color-morado-claro group-hover:!text-davs-color-cian transition-colors"
+NAVBAR_MENU_LINK = "!text-davs-color-blanco group-hover:!text-davs-color-blanco transition-colors"
 
 
 # ==========================================
@@ -23,31 +23,32 @@ COL_SPAN_2 = "col-span-1 md:col-span-2 lg:col-span-2 flex h-full w-full items-ce
 # ==========================================
 # HOME - PRESENTACION STYLES
 # ==========================================
-BODY_HOME_PRESENTACION_BASE = "h-auto min-h-[450px] w-full max-w-[650px] mr-0 px-6 md:px-0 mt-8 md:mt-0"
+BODY_HOME_PRESENTACION_BASE = "h-auto min-h-[450px] w-full max-w-[650px] mr-0 px-6 md:px-0 mt-8 md:mt-0 md:-translate-x-6"
 BODY_HOME_PRESENTACION_FOTO_BASE = (
     "h-[180px] w-[180px] md:h-[250px] md:w-[250px] "
-    "rounded-full "               
-    "border-2 border-[#00D1B3] "  
-    "bg-[#0E151F] "               
-    "overflow-hidden "           
-    "flex justify-center items-center shrink-0" 
+    "rounded-full "
+    "bg-[#0E151F] "
+    "overflow-hidden "
+    "flex justify-center items-center shrink-0 "
+    "drop-shadow-[0_18px_32px_rgba(0,0,0,0.7)]"
 )
 # BODY SECCION PRESENTACION
 BODY_HOME_PRESENTACION_TEXTO_SALUDO = "h-auto w-full max-w-[400px] flex flex-col justify-end items-center md:items-start pb-1 pt-4 md:pt-0 md:pl-5 text-xl md:text-2xl text-davs-color-blanco text-center md:text-left"
-BODY_HOME_PRESENTACION_TEXTO_MI_NOMBRE = "h-auto w-full max-w-[400px] flex flex-col justify-start items-center md:items-start pt-0 md:pl-5 text-2xl md:text-3xl font-bold text-davs-color-blanco text-center md:text-left"
-BODY_HOME_PRESENTACION_TEXTO_CARGO = "h-auto w-full max-w-[650px] mt-6 md:mt-8 mb-4 text-davs-color-cian font-semibold tracking-widest text-sm md:text-base text-center md:text-left"
-BODY_HOME_PRESENTACION_TEXTO_BIOGRAFIA = "h-auto w-full max-w-[650px] flex flex-col justify-start items-center md:items-start pb-3 md:pl-2 text-sm md:text-base text-davs-color-morado-claro text-center md:text-left"
+BODY_HOME_PRESENTACION_TEXTO_MI_NOMBRE = "h-auto w-full max-w-[650px] flex flex-col justify-start items-center md:items-start pt-0 md:pl-5 text-2xl sm:text-3xl md:text-4xl whitespace-nowrap font-bold text-davs-color-blanco text-center md:text-left"
+BODY_HOME_PRESENTACION_TEXTO_CARGO = "h-auto w-full max-w-[650px] mt-6 md:mt-8 mb-1 text-davs-color-cian font-semibold tracking-wide md:whitespace-nowrap text-base md:text-xl text-center md:text-left"
+BODY_HOME_PRESENTACION_TEXTO_CARGO_DETALLE = "h-auto w-full max-w-[650px] mb-4 text-davs-color-cian font-medium tracking-widest text-sm md:text-base text-center md:text-left"
+BODY_HOME_PRESENTACION_TEXTO_BIOGRAFIA = "h-auto w-full max-w-[650px] flex flex-col justify-start items-center md:items-start pb-3 md:pl-2 text-base md:text-lg text-davs-color-blanco text-center md:text-left"
 BODY_HOME_PRESENTACION_FOTO = (
     "w-full h-full object-cover "
     "scale-[1.3]"                
 )
 # BODY SECCION PROYECTOS
-BODY_HOME_PROYECTOS_BASE = "h-auto min-h-[650px] w-full max-w-[250px] md:mr-12 flex flex-col justify-start items-center md:items-start pt-10 pb-20 md:pb-0"  # ← CORREGIDO: mr-50 no existe en Tailwind
-BODY_HOME_PROYECTOS_TITULO = "h-auto w-[250px] flex flex-col justify-start items-center mb-2 text-sm font-bold text-davs-color-morado-oscuro"
-BODY_HOME_PROYECTOS_SEPARATOR = "w-full text-center text-davs-color-morado-oscuro text-lg tracking-widest"
+BODY_HOME_PROYECTOS_BASE = "h-auto min-h-[650px] w-full max-w-[380px] md:mr-20 md:-translate-x-4 flex flex-col justify-start items-center md:items-start pt-10 pb-20 md:pb-0"
+BODY_HOME_PROYECTOS_TITULO = "h-auto w-full flex flex-col justify-start items-center mb-5 md:mb-7 whitespace-nowrap text-base md:text-lg font-bold tracking-wide text-davs-color-blanco"
+BODY_HOME_PROYECTOS_SEPARATOR = "w-full text-center text-davs-color-blanco text-lg tracking-widest"
 BODY_HOME_PROYECTOS_TECH_NAME_TEXT = (
     "absolute left-[50%] ml-[55px] "
-    "text-sm text-davs-color-morado-claro whitespace-nowrap "
+    "text-sm text-davs-color-blanco whitespace-nowrap "
     "opacity-0 -translate-x-4 "
     "group-hover:opacity-100 group-hover:translate-x-0 "
     "transition-all duration-300 ease-out "
@@ -60,14 +61,14 @@ BODY_HOME_PROYECTOS_BASE_PROYECTOS = (
     "transition-all duration-300 ease-in-out"
 )
 BODY_HOME_PROYECTOS_BOTON_ANIMACION_BASE = (
-    "h-[80px] w-[80px] rounded-full " 
+    "h-[96px] w-[96px] rounded-full "
     "flex justify-center items-center "
-    "border-2 border-davs-color-cian " 
-    "bg-davs-color-base "          
-    "transition-all duration-300 ease-out "    
-    "transform hover:scale-110 hover:-translate-y-2 " 
-    "hover:shadow-[0_0_20px_rgba(70,172,159,0.3)] " 
-    "cursor-pointer z-20"  
+    "border border-white/10 "
+    "bg-davs-color-base "
+    "opacity-70 "
+    "transition-all duration-300 ease-out "
+    "transform hover:opacity-100 hover:translate-y-[-4px] "
+    "cursor-pointer z-20"
 )
 BODY_HOME_PROYECTOS_LOGO_IMG = "h-full w-full object-contain p-2" 
 
@@ -76,25 +77,25 @@ BODY_HOME_PROYECTOS_LOGO_IMG = "h-full w-full object-contain p-2"
 # PROYECTOS STYLES 
 # ==========================================
 PROYECTOS_HEADER_BASE = "w-full h-[60px] flex justify-center items-center"
-PROYECTOS_HEADER_TITULO_PRINCIPAL = "text-davs-color-morado-claro text-3xl font-bold " 
+PROYECTOS_HEADER_TITULO_PRINCIPAL = "text-davs-color-cian text-3xl font-bold " 
 PROYECTOS_BODY_BASE = "w-full min-h-screen py-12 px-8 md:px-24 flex flex-col gap-8 items-center"
 PROYECTOS_CARD_BASE = (
     "w-full max-w-7xl h-auto flex flex-col "
     "bg-[#0E151F] rounded-xl overflow-hidden shadow-lg "
-    "border border-[#00D1B3]"   # ← era "border-1 border-[#00D1B3]"
+    "border border-[#1E293B]"
 )
-PROYECTOS_CARD_BASE_TITULO = "w-full h-[50px] bg-davs-color-base px-6 flex items-center border-b border-davs-color-cian"
+PROYECTOS_CARD_BASE_TITULO = "w-full h-[50px] bg-davs-color-base px-6 flex items-center border-b border-[#1E293B]"
 PROYECTOS_CARD_BASE_DESCRIPCION = "w-full flex-1 p-6"
-PROYECTOS_CARD_BASE_TITULO_CONTENEDOR = "w-full min-h-[50px] h-auto bg-davs-color-base px-2 flex flex-row items-center border-b border-davs-color-cian"
-PROYECTOS_CARD_TITULO_TEXTO = "w-full md:w-[80%] p-4 flex items-center font-bold text-davs-color-morado-oscuro text-xl md:text-2xl break-words"
+PROYECTOS_CARD_BASE_TITULO_CONTENEDOR = "w-full min-h-[50px] h-auto bg-davs-color-base px-2 flex flex-row items-center border-b border-[#1E293B]"
+PROYECTOS_CARD_TITULO_TEXTO = "w-full md:w-[80%] p-4 flex items-center font-bold text-davs-color-blanco text-xl md:text-2xl break-words"
 PROYECTOS_CARD_TITULO_ICONOS = "w-full md:w-[20%] flex items-center justify-center md:justify-end gap-4 p-4"
 PROYECTOS_CARD_BASE_DESCRIPCION_CONTENEDOR = "w-full flex-1 flex flex-col md:flex-row" # flex-col para móvil
-PROYECTOS_CARD_DESC_TEXTO = "w-full md:w-[60%] p-6 flex flex-col justify-start text-sm md:text-base text-gray-300"
+PROYECTOS_CARD_DESC_TEXTO = "w-full md:w-[60%] p-6 flex flex-col justify-start text-sm md:text-base text-davs-color-blanco"
 PROYECTOS_CARD_DESC_IMG_CAJA = "w-full md:w-[40%] h-auto p-6 flex justify-center items-center"
-PROYECTOS_CARD_DESC_IMG = "w-full h-full object-cover rounded-xl border-2 border-davs-color-cian cursor-zoom-in hover:opacity-80 transition-opacity"
+PROYECTOS_CARD_DESC_IMG = "w-full h-full object-cover rounded-xl border border-[#1E293B] cursor-zoom-in hover:opacity-80 transition-opacity"
 PROYECTOS_CARD_ICONO_LINK = "text-davs-color-cian hover:!text-white transition-colors cursor-pointer"
 PROYECTOS_CARD_DESC_IMG_ZOOM = "w-full h-auto max-h-[90vh] object-contain rounded-xl"
-PROYECTOS_CARD_DESC_IMG_ZOOM_CERRAR = "mt-4 px-6 py-2 bg-[#0E151F] text-white border border-[#00D1B3] hover:bg-[#00D1B3] hover:text-black rounded-lg transition-colors cursor-pointer"
+PROYECTOS_CARD_DESC_IMG_ZOOM_CERRAR = "mt-4 px-6 py-2 bg-[#0E151F] text-white border border-[#1E293B] hover:border-[#00D1B3] hover:text-[#00D1B3] rounded-lg transition-colors cursor-pointer"
 
 
 #
@@ -102,44 +103,44 @@ PROYECTOS_CARD_DESC_IMG_ZOOM_CERRAR = "mt-4 px-6 py-2 bg-[#0E151F] text-white bo
 # EXPERIENCIA STYLES 
 # ==========================================
 EXPERIENCIA_HEADER_BASE = "w-full h-[60px] flex justify-center items-center"
-EXPERIENCIA_HEADER_TITULO_PRINCIPAL = "text-davs-color-morado-claro text-3xl font-bold"
+EXPERIENCIA_HEADER_TITULO_PRINCIPAL = "text-davs-color-cian text-3xl font-bold"
 EXPERIENCIA_BODY_BASE = "w-full min-h-screen py-12 px-8 md:px-24 grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center"
 EXPERIENCIA_CARD_BASE = (
     "w-full max-w-2xl h-full min-h-[300px] flex flex-col "
     "bg-[#0E151F] rounded-xl overflow-hidden shadow-lg "
-    "border border-[#00D1B3]"
+    "border border-[#1E293B]"
 )
 # ==== EXPERIENCIA CARD - HEADER
-EXPERIENCIA_CARD_HEADER_BASE = "w-full h-auto min-h-[70px] bg-davs-color-base px-4 py-4 flex flex-row items-center border-b border-davs-color-cian"
+EXPERIENCIA_CARD_HEADER_BASE = "w-full h-auto min-h-[70px] bg-davs-color-base px-4 py-4 flex flex-row items-center border-b border-[#1E293B]"
 EXPERIENCIA_CARD_HEADER_TITULO_BOX = "flex-1 h-auto flex flex-col justify-center"         
 EXPERIENCIA_CARD_HEADER_TITULO_TEXT = "text-white font-bold"
-EXPERIENCIA_CARD_HEADER_SUBTITULO_TEXT = "text-[#00D1B3] text-sm"
+EXPERIENCIA_CARD_HEADER_SUBTITULO_TEXT = "text-davs-color-blanco text-sm"
 EXPERIENCIA_CARD_HEADER_FECHA_BOX = "w-auto h-auto flex flex-col items-end justify-center shrink-0 pl-4"  
 EXPERIENCIA_CARD_HEADER_FECHA_TEXT = "text-white text-sm text-right"
 # ==== EXPERIENCIA CARD - BODY 
 EXPERIENCIA_CARD_BODY_BASE = "w-full flex-1 flex flex-col md:flex-row"                      
 EXPERIENCIA_CARD_BODY_DESCRIPCION_BOX = "w-full md:w-[60%] h-auto p-6 pb-8 flex flex-col justify-start"   
-EXPERIENCIA_CARD_BODY_DEFINICION_TEXT = "text-gray-300 text-justify mb-4 leading-relaxed"
-EXPERIENCIA_CARD_BODY_DESCRIPCION_LISTA = "list-disc ml-6 space-y-2 text-gray-300"
+EXPERIENCIA_CARD_BODY_DEFINICION_TEXT = "text-davs-color-blanco text-justify mb-4 leading-relaxed"
+EXPERIENCIA_CARD_BODY_DESCRIPCION_LISTA = "list-disc ml-6 space-y-2 text-davs-color-blanco"
 EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_BOX = "w-full md:w-[40%] h-full p-4 flex justify-center items-center"  
 EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG = "w-full h-auto object-contain rounded-lg border border-gray-700 cursor-zoom-in hover:opacity-80 transition-opacity"
 EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_ZOOM = "w-full h-auto max-h-[90vh] object-contain rounded-xl"
-EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_ZOOM_CERRAR = "mt-4 px-6 py-2 bg-[#0E151F] text-white border border-[#00D1B3] hover:bg-[#00D1B3] hover:text-black rounded-lg transition-colors cursor-pointer"
+EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_ZOOM_CERRAR = "mt-4 px-6 py-2 bg-[#0E151F] text-white border border-[#1E293B] hover:border-[#00D1B3] hover:text-[#00D1B3] rounded-lg transition-colors cursor-pointer"
 
 # ==========================================
 # ESTUDIOS STYLES 
 # ==========================================
 ESTUDIOS_HEADER_BASE = "w-full h-[60px] flex justify-center items-center"
-ESTUDIOS_HEADER_TITULO_PRINCIPAL = "text-davs-color-morado-claro text-3xl font-bold"
+ESTUDIOS_HEADER_TITULO_PRINCIPAL = "text-davs-color-cian text-3xl font-bold"
 ESTUDIOS_BODY_BASE = "w-full min-h-screen py-2 px-8 md:px-24 flex flex-col gap-8 items-center"
 ESTUDIOS_CARD_BASE = (
     "w-full max-w-3xl h-auto flex flex-col "
     "bg-[#0E151F] rounded-xl overflow-hidden shadow-lg "
-    "border border-[#00D1B3]"
+    "border border-[#1E293B]"
 )
-ESTUDIOS_CARD_HEADER_GRUPO_BOX = "w-full h-[50px] bg-davs-color-base px-6 flex flex-row items-center border-b border-davs-color-cian"
+ESTUDIOS_CARD_HEADER_GRUPO_BOX = "w-full h-[50px] bg-davs-color-base px-6 flex flex-row items-center border-b border-[#1E293B]"
 ESTUDIOS_CARD_HEADER_GRUPO_TITULO = "w-full h-full flex items-center p-4"
-ESTUDIOS_CARD_HEADER_GRUPO_TITULO_TEXT = "text-davs-color-morado-claro font-bold text-lg"
+ESTUDIOS_CARD_HEADER_GRUPO_TITULO_TEXT = "text-davs-color-blanco font-bold text-lg"
 ESTUDIOS_CARD_ROW_BOX = "w-full flex flex-row border-b border-gray-800 last:border-0"
 ESTUDIOS_CARD_ROW_FECHA_BOX = "w-[15%] h-auto flex flex-col items-start justify-center pl-2"
 ESTUDIOS_CARD_ROW_FECHA_TEXT = "text-white text-sm"
@@ -157,17 +158,17 @@ CONTACTO_BODY_BASE = "w-full h-auto py-4 px-8 md:px-24 flex flex-col gap-8 items
 CONTACTO_CARD_BASE = (
     "w-full max-w-xl h-auto flex flex-col justify-center items-center "
     "bg-[#0E151F] rounded-xl overflow-hidden shadow-lg py-12 "
-    "border border-[#00D1B3]"   # ← era "border-1 border-[#00D1B3]"
+    "border border-[#1E293B]"
 )
 CONTACTO_CARD_ROW_BOX = "w-full h-auto flex flex-col items-start justify-center"
-CONTACTO_HEADER_TITULO_PRINCIPAL = "text-davs-color-morado-claro text-3xl font-bold "
+CONTACTO_HEADER_TITULO_PRINCIPAL = "text-davs-color-cian text-3xl font-bold "
 CONTACTO_BODY_FOTO_BASE = (
     "h-[200px] w-[200px] "
-    "rounded-full "               
-    "border-2 border-davs-color-cian "
-    "bg-davs-color-base "               
-    "overflow-hidden "            
-    "flex justify-center items-center"
+    "rounded-full "
+    "bg-davs-color-base "
+    "overflow-hidden "
+    "flex justify-center items-center "
+    "drop-shadow-[0_18px_32px_rgba(0,0,0,0.7)]"
 )
 CONTACTO_BODY_FOTO = (
     "w-full h-full object-cover "
@@ -180,7 +181,7 @@ CONTACTO_BOTON_ANIMACION_BASE = (
 )
 CONTACTO_LOGO_IMG = "h-full w-full object-contain p-[14px] "
 CONTACTO_LOGO_ICON = "text-davs-color-cian"
-CONTACTO_TEXTO_LINK = "text-davs-color-morado-claro text-lg font-medium hover:text-white transition-colors cursor-pointer"
+CONTACTO_TEXTO_LINK = "text-davs-color-blanco text-lg font-medium transition-colors cursor-pointer"
 
 
 
@@ -190,11 +191,11 @@ CONTACTO_TEXTO_LINK = "text-davs-color-morado-claro text-lg font-medium hover:te
 ML_BODY_BASE = "w-full h-auto py-4 px-8 md:px-24 flex flex-col gap-8 items-center justify-center"
 ML_CARD_BASE = (
     "w-full max-w-xl h-auto flex flex-col justify-center items-center "
-    "bg-[#0E151F] rounded-xl overflow-hidden shadow-lg py-12 px-8 " # <-- AÑADIDO px-8
-    "border border-[#00D1B3]"   
+    "bg-[#0E151F] rounded-xl overflow-hidden shadow-lg py-12 px-8 "
+    "border border-[#1E293B]"
 )
 ML_CARD_ROW_BOX = "w-full h-auto flex flex-col items-start justify-center"
-ML_HEADER_TITULO_PRINCIPAL = "text-davs-color-morado-claro text-3xl font-bold "
+ML_HEADER_TITULO_PRINCIPAL = "text-davs-color-cian text-3xl font-bold "
 ML_BODY_FOTO_BASE = (
     "h-[250px] w-[400px] "         
     "bg-davs-color-base "            # Mantiene el color de fondo base
@@ -212,10 +213,10 @@ ML_BOTON_ANIMACION_BASE = (
 ML_LOGO_IMG = "h-full w-full object-contain p-[14px] "
 ML_LOGO_ICON = "text-davs-color-cian"
 
-ML_TEXTO_NORMAL = "text-davs-color-morado-claro text-lg font-medium"
+ML_TEXTO_NORMAL = "text-davs-color-blanco text-lg font-medium"
 
 # Estilo con efecto hover exclusivo para los enlaces
-ML_TEXTO_LINK = "text-davs-color-morado-claro text-lg font-medium hover:text-white transition-colors"
+ML_TEXTO_LINK = "text-davs-color-blanco text-lg font-medium transition-colors"
 
 
 # ==========================================
@@ -234,7 +235,7 @@ FOOTER_BASE = (
     "md:pl-20 md:pr-40" 
 )
 
-FOOTER_TEXT = "text-sm font-medium text-davs-color-morado-oscuro text-center md:text-left"
+FOOTER_TEXT = "text-sm font-medium text-davs-color-blanco text-center md:text-left"
 
 
 

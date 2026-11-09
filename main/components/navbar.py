@@ -1,13 +1,12 @@
 import reflex as rx
 from ..components.style import (
-    NAVBAR_BASE, NAVBAR_LOGO_IMG, NAVBAR_LINK, NAVBAR_LINK_TEXT, 
-    NAVBAR_ELEMENTOS_INTERIOR, NAVBAR_MENU_ITEM, NAVBAR_MENU_LINK
+    NAVBAR_BASE, NAVBAR_LINK, NAVBAR_LINK_TEXT,
+    NAVBAR_ELEMENTOS_INTERIOR, NAVBAR_MENU_ITEM, NAVBAR_MENU_LINK,
 )
 
 def navbar(show_home: bool = True) -> rx.Component:
     return rx.box(
         rx.hstack(
-            rx.image("/davs/DAVS_cian.png", class_name=NAVBAR_LOGO_IMG),
             rx.box(class_name="flex-1"),
 
             # --- ESCRITORIO ---
@@ -19,17 +18,22 @@ def navbar(show_home: bool = True) -> rx.Component:
                 rx.menu.root(
                     rx.menu.trigger(rx.hstack(rx.text("03.", class_name=NAVBAR_LINK_TEXT), rx.text("Proyectos", class_name=NAVBAR_LINK), align_items="center", spacing="1")),
                     rx.menu.content(
+                        # --- Proyectos visibles en Home ---
                         rx.menu.item(rx.link("Python", href="/proyectospython", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        rx.menu.item(rx.link("FastAPI", href="/proyectosfastapi", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        rx.menu.item(rx.link("Django", href="/proyectosdjango", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        rx.menu.item(rx.link("Reflex", href="/proyectosreflex", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        rx.menu.item(rx.link("Data y ML", href="/proyectosdatayml", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        rx.menu.item(rx.link("LangChain/MCP", href="/proyectoslangchainmcp", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
                         rx.menu.item(rx.link("SQL", href="/proyectossql", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        rx.menu.item(rx.link("Machine Learning", href="/proyectosML", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        rx.menu.item(rx.link("Apache Camel - Fuse", href="/proyectosapachecamel", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        rx.menu.item(rx.link("FastAPI", href="/proyectosfastapi", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
                         rx.menu.item(rx.link("NestJS", href="/proyectosnestjs", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        rx.menu.item(rx.link("React", href="/proyectosreact", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        rx.menu.item(rx.link("Langchain", href="/proyectoslangchain", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        rx.menu.item(rx.link("MCP", href="/proyectosmcp", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        bg="#0a0f16", border="1px solid #00D1B3", border_radius="8px", padding="8px",
+                        # --- Proyectos ocultos en Home (comentados) ---
+                        # rx.menu.item(rx.link("Django", href="/proyectosdjango", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        # rx.menu.item(rx.link("Reflex", href="/proyectosreflex", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        # rx.menu.item(rx.link("Machine Learning", href="/proyectosML", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        # rx.menu.item(rx.link("React", href="/proyectosreact", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        # rx.menu.item(rx.link("Langchain", href="/proyectoslangchain", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        # rx.menu.item(rx.link("MCP", href="/proyectosmcp", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        bg="#0a0f16", border="1px solid #1E293B", border_radius="8px", padding="8px",
                     ),
                 ),
                 rx.hstack(rx.text("04.", class_name=NAVBAR_LINK_TEXT), rx.link("Contacto", href="/contacto", class_name=NAVBAR_LINK), align_items="center", spacing="1"),
@@ -51,28 +55,34 @@ def navbar(show_home: bool = True) -> rx.Component:
                         # --- MODIFICACIÓN: PROYECTOS DESPLEGADOS EN MÓVIL ---
                         rx.menu.separator(background_color="#1A2332"),
                         rx.menu.item(rx.text("Proyectos:", class_name="text-davs-color-cian font-bold text-sm outline-none"), class_name="outline-none"),
+                        # --- Proyectos visibles en Home ---
                         rx.menu.item(rx.link("• Python", href="/proyectospython", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        rx.menu.item(rx.link("• FastAPI", href="/proyectosfastapi", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        rx.menu.item(rx.link("• Django", href="/proyectosdjango", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        rx.menu.item(rx.link("• Reflex", href="/proyectosreflex", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        rx.menu.item(rx.link("• Data y ML", href="/proyectosdatayml", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        rx.menu.item(rx.link("• LangChain/MCP", href="/proyectoslangchainmcp", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
                         rx.menu.item(rx.link("• SQL", href="/proyectossql", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        rx.menu.item(rx.link("• Machine Learning", href="/proyectosML", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        rx.menu.item(rx.link("• Apache Camel - Fuse", href="/proyectosapachecamel", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        rx.menu.item(rx.link("• FastAPI", href="/proyectosfastapi", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
                         rx.menu.item(rx.link("• NestJS", href="/proyectosnestjs", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        rx.menu.item(rx.link("• React", href="/proyectosreact", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        rx.menu.item(rx.link("• Langchain", href="/proyectoslangchain", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        rx.menu.item(rx.link("• MCP", href="/proyectosmcp", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        # --- Proyectos ocultos en Home (comentados) ---
+                        # rx.menu.item(rx.link("• Django", href="/proyectosdjango", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        # rx.menu.item(rx.link("• Reflex", href="/proyectosreflex", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        # rx.menu.item(rx.link("• Machine Learning", href="/proyectosML", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        # rx.menu.item(rx.link("• React", href="/proyectosreact", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        # rx.menu.item(rx.link("• Langchain", href="/proyectoslangchain", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        # rx.menu.item(rx.link("• MCP", href="/proyectosmcp", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
                         rx.menu.separator(background_color="#1A2332"),
                         # ----------------------------------------------------
 
                         rx.menu.item(rx.link("Contacto", href="/contacto", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        bg="#0a0f16", border="1px solid #00D1B3", border_radius="8px", padding="8px",
+                        bg="#0a0f16", border="1px solid #1E293B", border_radius="8px", padding="8px",
                     ),
                 ),
                 class_name="md:hidden" 
             ),
             
             class_name=NAVBAR_ELEMENTOS_INTERIOR,
-            align_items="center"
+            align_items="center",
+            height="100%",
         ),
         class_name=NAVBAR_BASE
     )

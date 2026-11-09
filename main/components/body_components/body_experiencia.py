@@ -102,7 +102,7 @@ def body_experiencia() -> rx.Component:
                                         spacing="0"
                                        ),
                                        background_color="#0E151F",
-                                       border="2px solid #00D1B3",
+                                       border="1px solid #1E293B",
                                        max_width="45vw",
                                        width="45vw",
                                        class_name="rounded-xl shadow-2xl p-4"
@@ -178,7 +178,7 @@ def body_experiencia() -> rx.Component:
                                         spacing="0"
                                        ),
                                        background_color="#0E151F",
-                                       border="2px solid #00D1B3",
+                                       border="1px solid #1E293B",
                                        max_width="45vw",
                                        width="45vw",
                                        class_name="rounded-xl shadow-2xl p-4"
@@ -254,7 +254,7 @@ def body_experiencia() -> rx.Component:
                                         spacing="0"
                                        ),
                                        background_color="#0E151F",
-                                       border="2px solid #00D1B3",
+                                       border="1px solid #1E293B",
                                        max_width="45vw",
                                        width="45vw",
                                        class_name="rounded-xl shadow-2xl p-4"
@@ -330,7 +330,7 @@ def body_experiencia() -> rx.Component:
                                         spacing="0"
                                        ),
                                        background_color="#0E151F",
-                                       border="2px solid #00D1B3",
+                                       border="1px solid #1E293B",
                                        max_width="45vw",
                                        width="45vw",
                                        class_name="rounded-xl shadow-2xl p-4"
@@ -346,78 +346,78 @@ def body_experiencia() -> rx.Component:
 
                 # ============================================================================================================================
                 # ====== TARJETA 5 ====== ZEPEDA ========
-                rx.box(
-                    # CABECERA TARJETA
-                    rx.box(
-                        rx.box(
-                            # Títulos & Subtitulo
-                            rx.vstack(
-                                rx.text(INFORMACION_EXPERIENCIA["experiencia_5"]["titulo"], class_name=EXPERIENCIA_CARD_HEADER_TITULO_TEXT),
-                                rx.text(INFORMACION_EXPERIENCIA["experiencia_5"]["subtitulo"], class_name=EXPERIENCIA_CARD_HEADER_SUBTITULO_TEXT),
-                                spacing="1", 
-                                align_items="start",
-                            ),
-                            class_name=EXPERIENCIA_CARD_HEADER_TITULO_BOX,
-                        ),
-                        rx.box(
-                            # Fecha
-                            rx.text(INFORMACION_EXPERIENCIA["experiencia_5"]["fecha_inicio"], class_name=EXPERIENCIA_CARD_HEADER_FECHA_TEXT),
-                            rx.text(INFORMACION_EXPERIENCIA["experiencia_5"]["fecha_fin"], class_name=EXPERIENCIA_CARD_HEADER_FECHA_TEXT),
-                            class_name=EXPERIENCIA_CARD_HEADER_FECHA_BOX,
-                        ),
-                        class_name=EXPERIENCIA_CARD_HEADER_BASE,
-                    ),
-                    # CUERPO TARJETA
-                    rx.box(
-                        # Descripcion
-                        rx.box(
-                            rx.text(INFORMACION_EXPERIENCIA["experiencia_5"]["definicion"], class_name=EXPERIENCIA_CARD_BODY_DEFINICION_TEXT),
-                            rx.unordered_list(
-                                *[
-                                    rx.list_item(punto) 
-                                    for punto in INFORMACION_EXPERIENCIA["experiencia_5"]["descripcion"]
-                                ],
-                                class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_LISTA
-                            ),
-                            class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_BOX,
-                        ),
-                        # Imagen 
-                        rx.box(
-                            rx.dialog.root(
-                                rx.dialog.trigger(
-                                    rx.image(
-                                        src=INFORMACION_EXPERIENCIA["experiencia_5"]["imagen"],
-                                        class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG,
-                                    ),
-                                ),
-                                rx.dialog.content(
-                                    rx.vstack(
-                                        rx.image(
-                                            src=INFORMACION_EXPERIENCIA["experiencia_5"]["imagen"],
-                                            class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_ZOOM
-                                        ),
-                                        rx.dialog.close(
-                                            rx.button(
-                                                "Cerrar", 
-                                                class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_ZOOM_CERRAR
-                                            )
-                                        ),
-                                        align_items="center",
-                                        spacing="0"
-                                       ),
-                                       background_color="#0E151F",
-                                       border="2px solid #00D1B3",
-                                       max_width="45vw",
-                                       width="45vw",
-                                       class_name="rounded-xl shadow-2xl p-4"
-                                ),
-                            ),
-                            class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_BOX,
-                        ),
-                        class_name=EXPERIENCIA_CARD_BODY_BASE,
-                    ),
-                    class_name=EXPERIENCIA_CARD_BASE,
-                ),
+                # rx.box(
+                #     # CABECERA TARJETA
+                #     rx.box(
+                #         rx.box(
+                #             # Títulos & Subtitulo
+                #             rx.vstack(
+                #                 rx.text(INFORMACION_EXPERIENCIA["experiencia_5"]["titulo"], class_name=EXPERIENCIA_CARD_HEADER_TITULO_TEXT),
+                #                 rx.text(INFORMACION_EXPERIENCIA["experiencia_5"]["subtitulo"], class_name=EXPERIENCIA_CARD_HEADER_SUBTITULO_TEXT),
+                #                 spacing="1", 
+                #                 align_items="start",
+                #             ),
+                #             class_name=EXPERIENCIA_CARD_HEADER_TITULO_BOX,
+                #         ),
+                #         rx.box(
+                #             # Fecha
+                #             rx.text(INFORMACION_EXPERIENCIA["experiencia_5"]["fecha_inicio"], class_name=EXPERIENCIA_CARD_HEADER_FECHA_TEXT),
+                #             rx.text(INFORMACION_EXPERIENCIA["experiencia_5"]["fecha_fin"], class_name=EXPERIENCIA_CARD_HEADER_FECHA_TEXT),
+                #             class_name=EXPERIENCIA_CARD_HEADER_FECHA_BOX,
+                #         ),
+                #         class_name=EXPERIENCIA_CARD_HEADER_BASE,
+                #     ),
+                #     # CUERPO TARJETA
+                #     rx.box(
+                #         # Descripcion
+                #         rx.box(
+                #             rx.text(INFORMACION_EXPERIENCIA["experiencia_5"]["definicion"], class_name=EXPERIENCIA_CARD_BODY_DEFINICION_TEXT),
+                #             rx.unordered_list(
+                #                 *[
+                #                     rx.list_item(punto) 
+                #                     for punto in INFORMACION_EXPERIENCIA["experiencia_5"]["descripcion"]
+                #                 ],
+                #                 class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_LISTA
+                #             ),
+                #             class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_BOX,
+                #         ),
+                #         # Imagen 
+                #         rx.box(
+                #             rx.dialog.root(
+                #                 rx.dialog.trigger(
+                #                     rx.image(
+                #                         src=INFORMACION_EXPERIENCIA["experiencia_5"]["imagen"],
+                #                         class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG,
+                #                     ),
+                #                 ),
+                #                 rx.dialog.content(
+                #                     rx.vstack(
+                #                         rx.image(
+                #                             src=INFORMACION_EXPERIENCIA["experiencia_5"]["imagen"],
+                #                             class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_ZOOM
+                #                         ),
+                #                         rx.dialog.close(
+                #                             rx.button(
+                #                                 "Cerrar", 
+                #                                 class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_ZOOM_CERRAR
+                #                             )
+                #                         ),
+                #                         align_items="center",
+                #                         spacing="0"
+                #                        ),
+                #                        background_color="#0E151F",
+                #                        border="1px solid #1E293B",
+                #                        max_width="45vw",
+                #                        width="45vw",
+                #                        class_name="rounded-xl shadow-2xl p-4"
+                #                 ),
+                #             ),
+                #             class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_BOX,
+                #         ),
+                #         class_name=EXPERIENCIA_CARD_BODY_BASE,
+                #     ),
+                #     class_name=EXPERIENCIA_CARD_BASE,
+                # ),
                 # ============================================================================================================================
 
                 class_name=EXPERIENCIA_BODY_BASE,

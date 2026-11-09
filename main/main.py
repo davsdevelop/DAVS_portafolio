@@ -2,6 +2,7 @@ import reflex as rx
 
 from main.pages.projects_pages.langchain_page import proyectos_langchain_page
 from main.pages.projects_pages.mcp_page import proyectos_mcp_page
+from main.pages.projects_pages.langchain_mcp_page import proyectos_langchain_mcp_page
 
 from .components.background import neural_background
 from .components.navbar import navbar
@@ -19,6 +20,8 @@ from .pages.projects_pages.reflex_page import proyectos_reflex_page
 from .pages.projects_pages.sql_page import proyectos_sql_page
 from .pages.projects_pages.nestjs_page import proyectos_nestjs_page
 from .pages.projects_pages.react_page import proyectos_react_page
+from .pages.projects_pages.datayml_page import proyectos_datayml_page
+from .pages.projects_pages.apachecamel_page import proyectos_apachecamel_page
 
 
 @rx.page(
@@ -48,7 +51,6 @@ app = rx.App(
         "/custom.css"
     ]
 )
-app.add_page(index)
 
 app.add_page(experiencia_page(), route="/experiencia", title="DAVSportafolio | Experiencia")
 app.add_page(estudios_page(), route="/estudios", title="DAVSportafolio | Estudios")
@@ -61,6 +63,9 @@ app.add_page(proyectos_sql_page(), route="/proyectossql", title="DAVSportafolio 
 app.add_page(ml_page(), route="/proyectosML", title="DAVSportafolio | Machine Learning")
 app.add_page(proyectos_nestjs_page(), route="/proyectosnestjs", title="DAVSportafolio | NestJS")
 app.add_page(proyectos_react_page(), route="/proyectosreact", title="DAVSportafolio | React")
+app.add_page(proyectos_datayml_page(), route="/proyectosdatayml", title="DAVSportafolio | Data y ML")
+app.add_page(proyectos_apachecamel_page(), route="/proyectosapachecamel", title="DAVSportafolio | Apache Camel - Fuse")
 
 app.add_page(proyectos_langchain_page(), route="/proyectoslangchain", title="DAVSportafolio | LangChain")
 app.add_page(proyectos_mcp_page(), route="/proyectosmcp", title="DAVSportafolio | MCP")
+app.add_page(proyectos_langchain_mcp_page(), route="/proyectoslangchainmcp", title="DAVSportafolio | LangChain & MCP")

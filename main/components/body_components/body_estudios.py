@@ -84,7 +84,7 @@ def body_estudios() -> rx.Component:
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_1"]),
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_2"]),
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_3"]),
-                crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_4"]),
+                # crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_4"]),
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_5"]),
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_6"]),
   

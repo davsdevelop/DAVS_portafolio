@@ -3,12 +3,12 @@
         "saludo": "Hola, mi nombre es",
         "nombre": "Diego Arturo Videla Silva",
         "fotografia": "/davs/DAVS_OK.png",
-        "cargo": "INGENIERO BACKEND & IA | ORQUESTACIÓN DE AGENTES E INTEGRACIÓN DE SISTEMAS",
-        "descripcion": "Ingeniero Backend con sólida trayectoria en el diseño e implementación de APIs y microservicios escalables. Mi perfil principal se centra en el desarrollo backend de alto rendimiento utilizando el ecosistema de Python (FastAPI, Django) y entornos basados en Node.js con TypeScript (NestJS), sumando capacidades full-stack mediante la integración de React y Reflex. Complemento mi núcleo de desarrollo con una destacada experiencia técnica en integración Middleware, lo que me permite modernizar sistemas legados y asegurar la continuidad operativa mediante herramientas como Apache Camel y JBoss Fuse.  Actualmente consolido esta sólida base técnica enfocando mi carrera hacia la Ingeniería en IA. Me especializo en la orquestación de agentes autónomos (LangGraph), arquitecturas con memoria vectorial (ChromaDB) y la integración segura de modelos LLM locales con ecosistemas empresariales a través del estándar Model Context Protocol (MCP). Poseo una gran capacidad de aprendizaje autónomo y un trasfondo en automatización, aportando una visión integral desde la creación del microservicio hasta su despliegue en la nube.",
+        "cargo": "Data Scientist | Ingeniero de Software & Integración (Python, APIs, Middleware)",
+        "descripcion": "Ingeniero de formación analítica con más de 3 años de experiencia en el sector TI, especializado fuertemente en integración de sistemas (Red Hat JBoss Fuse, Apache Camel) y desarrollo de microservicios backend. Mi trayectoria me ha dado una comprensión profunda de cómo se mueven, orquestan y transforman los datos en entornos corporativos críticos. Actualmente finalizando mi Diplomatura en Data Science, respaldado por un Diplomado en IA Aplicada (redes neuronales y visión artificial). Busco aportar en Data Science uniendo la creación de modelos predictivos con mi capacidad real en ingeniería de software para su despliegue y orquestación productiva.",
         "linkedin_link": "https://www.linkedin.com/in/diego-arturo-videla-silva-83b495188/",
         "davs_email": "dvidelasilva@gmail.com",
         "davs_ubicacion": "Buin, Chile",
-        "CV": "/documentos/DAVS_CV_Dev.pdf"
+        "CV": "/documentos/DAVS_CV.pdf"
     },
     "blog":{
         "fotografia": "/davs/neuromblog_blanco.png",

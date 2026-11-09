@@ -56,7 +56,7 @@ def card_proyecto(datos: dict) -> rx.Component:
                     rx.dialog.content(
                         rx.vstack(
                             rx.video(
-                                url=enlace_app,
+                                src=enlace_app,
                                 width="100%",
                                 height="auto",
                                 controls=True,
@@ -72,7 +72,7 @@ def card_proyecto(datos: dict) -> rx.Component:
                             spacing="0"
                         ),
                         background_color="#0E151F",
-                        border="2px solid #00D1B3",
+                        border="1px solid #1E293B",
                         max_width="60vw",
                         width="60vw",
                         class_name="rounded-xl shadow-2xl p-4"
@@ -135,7 +135,7 @@ def card_proyecto(datos: dict) -> rx.Component:
                                 spacing="0"
                             ),
                             background_color="#0E151F",
-                            border="2px solid #00D1B3",
+                            border="1px solid #1E293B",
                             max_width="45vw",
                             width="45vw",
                             class_name="rounded-xl shadow-2xl p-4"
