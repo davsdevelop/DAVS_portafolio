@@ -33,7 +33,7 @@ BODY_HOME_PRESENTACION_FOTO_BASE = (
     "drop-shadow-[0_18px_32px_rgba(0,0,0,0.7)]"
 )
 # BODY SECCION PRESENTACION
-BODY_HOME_PRESENTACION_TEXTO_SALUDO = "h-auto w-full max-w-[400px] flex flex-col justify-end items-center md:items-start pb-1 pt-4 md:pt-0 md:pl-5 text-xl md:text-2xl text-davs-color-blanco text-center md:text-left"
+BODY_HOME_PRESENTACION_TEXTO_SALUDO = "h-auto w-full max-w-[650px] flex flex-col justify-end items-center md:items-start pb-1 pt-4 md:pt-0 md:pl-5 text-xl md:text-2xl text-davs-color-blanco text-center md:text-left"
 BODY_HOME_PRESENTACION_TEXTO_MI_NOMBRE = "h-auto w-full max-w-[650px] flex flex-col justify-start items-center md:items-start pt-0 md:pl-5 text-2xl sm:text-3xl md:text-4xl whitespace-nowrap font-bold text-davs-color-blanco text-center md:text-left"
 BODY_HOME_PRESENTACION_TEXTO_CARGO = "h-auto w-full max-w-[650px] mt-6 md:mt-8 mb-1 text-davs-color-cian font-semibold tracking-wide md:whitespace-nowrap text-base md:text-xl text-center md:text-left"
 BODY_HOME_PRESENTACION_TEXTO_CARGO_DETALLE = "h-auto w-full max-w-[650px] mb-4 text-davs-color-cian font-medium tracking-widest text-sm md:text-base text-center md:text-left"
