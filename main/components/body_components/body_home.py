@@ -155,7 +155,7 @@ def body_home() -> rx.Component:
                             rx.vstack(
                                 rx.text("DATA SCIENCE & IA", font_weight="bold", margin_bottom="1em", white_space="nowrap"),
                                 proyecto_icon_with_separator(img_src="/logos/python_logo.png", href="/proyectospython", technology_name="Python"),
-                                proyecto_icon_with_separator(img_src="/logos/ML_logo.png", href="/proyectosdatayml", technology_name="Data y ML"),
+                                proyecto_icon_with_separator(img_src="/logos/data.png", href="/proyectosdatayml", technology_name="Data y ML"),
                                 proyecto_icon_with_separator(img_src="/logos/langchain_logo.png", href="/proyectoslangchainmcp", technology_name="LangChain/MCP"),
                                 # proyecto_icon_with_separator(img_src="/logos/MCP_logo.png", href="/proyectosmcp", technology_name="MCP"),
                                 proyecto_icon_with_separator(img_src="/logos/sql_logo.png", href="/proyectossql", technology_name="SQL"),
@@ -168,7 +168,7 @@ def body_home() -> rx.Component:
                             rx.vstack(
                                 rx.text("BACKEND E INTEGRACIÓN", font_weight="bold", margin_bottom="1em", white_space="nowrap"),
                                 # proyecto_icon_with_separator(img_src="/logos/python_logo.png", href="/proyectospython", technology_name="Python"),
-                                proyecto_icon_with_separator(img_src="/logos/ML_logo.png", href="/proyectosapachecamel", technology_name="APACHE CAMEL - FUSE"),
+                                proyecto_icon_with_separator(img_src="/logos/fuse.png", href="/proyectosapachecamel", technology_name="APACHE CAMEL - FUSE"),
                                 proyecto_icon_with_separator(img_src="/logos/fastapi_logo.png", href="/proyectosfastapi", technology_name="FastAPI"),
                                 # proyecto_icon_with_separator(img_src="/logos/django_logo.png", href="/proyectosdjango", technology_name="Django"),
                                 # proyecto_icon_with_separator(img_src="/logos/reflex_logo.png", href="/proyectosreflex", technology_name="Reflex"),
@@ -195,5 +195,5 @@ def body_home() -> rx.Component:
             ),
             class_name=GRID_3_COLS,
         ),
-        class_name=f"{BODY} pt-10 md:pt-16",
+        class_name=f"{BODY} pt-10 md:pt-16 md:pr-16 lg:pr-24",
     )

@@ -23,7 +23,7 @@ COL_SPAN_2 = "col-span-1 md:col-span-2 lg:col-span-2 flex h-full w-full items-ce
 # ==========================================
 # HOME - PRESENTACION STYLES
 # ==========================================
-BODY_HOME_PRESENTACION_BASE = "h-auto min-h-[450px] w-full max-w-[650px] mr-0 px-6 md:px-0 mt-8 md:mt-0 md:-translate-x-6"
+BODY_HOME_PRESENTACION_BASE = "h-auto min-h-[450px] w-full max-w-[650px] mr-0 px-6 md:px-0 mt-8 md:mt-0 md:-translate-x-10"
 BODY_HOME_PRESENTACION_FOTO_BASE = (
     "h-[180px] w-[180px] md:h-[250px] md:w-[250px] "
     "rounded-full "
@@ -43,7 +43,7 @@ BODY_HOME_PRESENTACION_FOTO = (
     "scale-[1.3]"                
 )
 # BODY SECCION PROYECTOS
-BODY_HOME_PROYECTOS_BASE = "h-auto min-h-[650px] w-full max-w-[380px] md:mr-20 md:-translate-x-4 flex flex-col justify-start items-center md:items-start pt-10 pb-20 md:pb-0"
+BODY_HOME_PROYECTOS_BASE = "h-auto min-h-[650px] w-full max-w-[380px] md:mr-20 md:-translate-x-8 flex flex-col justify-start items-center md:items-start pt-10 pb-20 md:pb-0"
 BODY_HOME_PROYECTOS_TITULO = "h-auto w-full flex flex-col justify-start items-center mb-5 md:mb-7 whitespace-nowrap text-base md:text-lg font-bold tracking-wide text-davs-color-blanco"
 BODY_HOME_PROYECTOS_SEPARATOR = "w-full text-center text-davs-color-blanco text-lg tracking-widest"
 BODY_HOME_PROYECTOS_TECH_NAME_TEXT = (
