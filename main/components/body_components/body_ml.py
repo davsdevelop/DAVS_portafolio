@@ -65,7 +65,11 @@ def body_ml() -> rx.Component:
                 rx.vstack(
                     # FOTOGRAFÍA
                     rx.box(
-                        rx.image(src=INFORMACION_PERSONAL["blog"]["fotografia"], class_name=ML_BODY_FOTO),
+                        rx.image(
+                            src=INFORMACION_PERSONAL["blog"]["fotografia"],
+                            alt=INFORMACION_PERSONAL["blog"]["titulo"],
+                            class_name=ML_BODY_FOTO,
+                        ),
                         class_name=ML_BODY_FOTO_BASE
                     ),
                     

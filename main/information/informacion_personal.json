@@ -3,12 +3,12 @@
         "saludo": "Hola, mi nombre es",
         "nombre": "Diego Arturo Videla Silva",
         "fotografia": "/davs/DAVS_OK.png",
-        "cargo": "Data Scientist | Ingeniero de Software & Integración (Python, APIs, Middleware)",
-        "descripcion": "Ingeniero de formación analítica con más de 3 años de experiencia en el sector TI, especializado fuertemente en integración de sistemas (Red Hat JBoss Fuse, Apache Camel) y desarrollo de microservicios backend. Mi trayectoria me ha dado una comprensión profunda de cómo se mueven, orquestan y transforman los datos en entornos corporativos críticos. Actualmente finalizando mi Diplomatura en Data Science, respaldado por un Diplomado en IA Aplicada (redes neuronales y visión artificial). Busco aportar en Data Science uniendo la creación de modelos predictivos con mi capacidad real en ingeniería de software para su despliegue y orquestación productiva.",
-        "linkedin_link": "https://www.linkedin.com/in/diego-arturo-videla-silva-83b495188/",
+        "cargo": "Ingeniero Backend | Data Scientist Jr.",
+        "descripcion": "Ingeniero Backend & Data Scientist Jr. con más de 3 años de experiencia en el sector TI desarrollando e integrando sistemas corporativos críticos. Mi propuesta de valor radica en unir el análisis avanzado de datos y el Machine Learning con la ingeniería de software empírica. Diseño modelos predictivos para resolver problemas de negocio y utilizo mi sólido background en arquitectura (Python, Node.js, NestJS, Apache Camel) para asegurar que esos algoritmos se desplieguen a producción de forma escalable y sin fricción.",
+        "linkedin_link": "https://www.linkedin.com/in/diegovidela-dev/",
         "davs_email": "dvidelasilva@gmail.com",
         "davs_ubicacion": "Buin, Chile",
-        "CV": "/documentos/DAVS_CV.pdf"
+        "CV": "/documentos/CV_Diego_Videla_Silva_Data.pdf"
     },
     "blog":{
         "fotografia": "/davs/neuromblog_blanco.png",

@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Validar sintaxis Python
+        run: python -m compileall -q main
+
+      - name: Validar JSON
+        run: |
+          python - <<'PY'
+          import glob, json
+          for path in glob.glob("main/information/*.json"):
+              with open(path, encoding="utf-8") as f:
+                  json.load(f)
+          print("JSON OK")
+          PY

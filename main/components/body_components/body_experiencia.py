@@ -83,6 +83,7 @@ def body_experiencia() -> rx.Component:
                                 rx.dialog.trigger(
                                     rx.image(
                                         src=INFORMACION_EXPERIENCIA["experiencia_1"]["imagen"], 
+                                        alt=INFORMACION_EXPERIENCIA["experiencia_1"]["titulo"],
                                         class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG,
                                     ),
                                 ),
@@ -90,6 +91,7 @@ def body_experiencia() -> rx.Component:
                                     rx.vstack(
                                         rx.image(
                                             src=INFORMACION_EXPERIENCIA["experiencia_1"]["imagen"],
+                                            alt=INFORMACION_EXPERIENCIA["experiencia_1"]["titulo"],
                                             class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_ZOOM
                                         ),
                                         rx.dialog.close(
@@ -103,8 +105,8 @@ def body_experiencia() -> rx.Component:
                                        ),
                                        background_color="#0E151F",
                                        border="1px solid #1E293B",
-                                       max_width="45vw",
-                                       width="45vw",
+                                       max_width={"initial": "90vw", "md": "45vw"},
+                                       width={"initial": "90vw", "md": "45vw"},
                                        class_name="rounded-xl shadow-2xl p-4"
                                 ),
                             ),
@@ -159,6 +161,7 @@ def body_experiencia() -> rx.Component:
                                 rx.dialog.trigger(
                                     rx.image(
                                         src=INFORMACION_EXPERIENCIA["experiencia_2"]["imagen"], 
+                                        alt=INFORMACION_EXPERIENCIA["experiencia_2"]["titulo"],
                                         class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG,
                                     ),
                                 ),
@@ -166,6 +169,7 @@ def body_experiencia() -> rx.Component:
                                     rx.vstack(
                                         rx.image(
                                             src=INFORMACION_EXPERIENCIA["experiencia_2"]["imagen"],
+                                            alt=INFORMACION_EXPERIENCIA["experiencia_2"]["titulo"],
                                             class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_ZOOM
                                         ),
                                         rx.dialog.close(
@@ -179,8 +183,8 @@ def body_experiencia() -> rx.Component:
                                        ),
                                        background_color="#0E151F",
                                        border="1px solid #1E293B",
-                                       max_width="45vw",
-                                       width="45vw",
+                                       max_width={"initial": "90vw", "md": "45vw"},
+                                       width={"initial": "90vw", "md": "45vw"},
                                        class_name="rounded-xl shadow-2xl p-4"
                                 ),
                             ),
@@ -235,6 +239,7 @@ def body_experiencia() -> rx.Component:
                                 rx.dialog.trigger(
                                     rx.image(
                                         src=INFORMACION_EXPERIENCIA["experiencia_3"]["imagen"], 
+                                        alt=INFORMACION_EXPERIENCIA["experiencia_3"]["titulo"],
                                         class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG,
                                     ),
                                 ),
@@ -242,6 +247,7 @@ def body_experiencia() -> rx.Component:
                                     rx.vstack(
                                         rx.image(
                                             src=INFORMACION_EXPERIENCIA["experiencia_3"]["imagen"],
+                                            alt=INFORMACION_EXPERIENCIA["experiencia_3"]["titulo"],
                                             class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_ZOOM
                                         ),
                                         rx.dialog.close(
@@ -255,8 +261,8 @@ def body_experiencia() -> rx.Component:
                                        ),
                                        background_color="#0E151F",
                                        border="1px solid #1E293B",
-                                       max_width="45vw",
-                                       width="45vw",
+                                       max_width={"initial": "90vw", "md": "45vw"},
+                                       width={"initial": "90vw", "md": "45vw"},
                                        class_name="rounded-xl shadow-2xl p-4"
                                 ),
                             ),
@@ -311,6 +317,7 @@ def body_experiencia() -> rx.Component:
                                 rx.dialog.trigger(
                                     rx.image(
                                         src=INFORMACION_EXPERIENCIA["experiencia_4"]["imagen"], 
+                                        alt=INFORMACION_EXPERIENCIA["experiencia_4"]["titulo"],
                                         class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG,
                                     ),
                                 ),
@@ -318,6 +325,7 @@ def body_experiencia() -> rx.Component:
                                     rx.vstack(
                                         rx.image(
                                             src=INFORMACION_EXPERIENCIA["experiencia_4"]["imagen"], 
+                                        alt=INFORMACION_EXPERIENCIA["experiencia_4"]["titulo"],
                                             class_name=EXPERIENCIA_CARD_BODY_DESCRIPCION_IMG_ZOOM
                                         ),
                                         rx.dialog.close(
@@ -331,8 +339,8 @@ def body_experiencia() -> rx.Component:
                                        ),
                                        background_color="#0E151F",
                                        border="1px solid #1E293B",
-                                       max_width="45vw",
-                                       width="45vw",
+                                       max_width={"initial": "90vw", "md": "45vw"},
+                                       width={"initial": "90vw", "md": "45vw"},
                                        class_name="rounded-xl shadow-2xl p-4"
                                 ),
                             ),
@@ -407,8 +415,8 @@ def body_experiencia() -> rx.Component:
                 #                        ),
                 #                        background_color="#0E151F",
                 #                        border="1px solid #1E293B",
-                #                        max_width="45vw",
-                #                        width="45vw",
+                #                        max_width={"initial": "90vw", "md": "45vw"},
+                #                        width={"initial": "90vw", "md": "45vw"},
                 #                        class_name="rounded-xl shadow-2xl p-4"
                 #                 ),
                 #             ),

@@ -37,6 +37,7 @@ def card_proyecto(datos: dict) -> rx.Component:
             rx.icon(tag="code", size=30),
             href=datos["link_repositorio"],
             is_external=True,
+            custom_attrs={"aria-label": f"Ver repositorio de {datos['titulo']}"},
             class_name=PROYECTOS_CARD_ICONO_LINK,
         ),
     ]
@@ -51,6 +52,7 @@ def card_proyecto(datos: dict) -> rx.Component:
                             rx.icon(tag="play", size=30),
                             class_name=PROYECTOS_CARD_ICONO_LINK,
                             cursor="pointer",
+                            custom_attrs={"aria-label": f"Ver video de {datos['titulo']}", "role": "button"},
                         ),
                     ),
                     rx.dialog.content(
@@ -73,8 +75,8 @@ def card_proyecto(datos: dict) -> rx.Component:
                         ),
                         background_color="#0E151F",
                         border="1px solid #1E293B",
-                        max_width="60vw",
-                        width="60vw",
+                        max_width={"initial": "90vw", "md": "60vw"},
+                        width={"initial": "90vw", "md": "60vw"},
                         class_name="rounded-xl shadow-2xl p-4"
                     ),
                 )
@@ -86,6 +88,7 @@ def card_proyecto(datos: dict) -> rx.Component:
                     rx.icon(tag="globe", size=30),
                     href=enlace_app,
                     is_external=True,
+                    custom_attrs={"aria-label": f"Ver aplicación de {datos['titulo']}"},
                     class_name=PROYECTOS_CARD_ICONO_LINK,
                 )
             )
@@ -115,14 +118,14 @@ def card_proyecto(datos: dict) -> rx.Component:
                     rx.dialog.root(
                         rx.dialog.trigger(
                             rx.image(
-                                src=datos["imagen"], 
+                                src=datos["imagen"], alt=datos["titulo"], 
                                 class_name=PROYECTOS_CARD_DESC_IMG
                             ),
                         ),
                         rx.dialog.content(
                             rx.vstack(
                                 rx.image(
-                                    src=datos["imagen"],
+                                    src=datos["imagen"], alt=datos["titulo"],
                                     class_name=PROYECTOS_CARD_DESC_IMG_ZOOM
                                 ),
                                 rx.dialog.close(
@@ -136,8 +139,8 @@ def card_proyecto(datos: dict) -> rx.Component:
                             ),
                             background_color="#0E151F",
                             border="1px solid #1E293B",
-                            max_width="45vw",
-                            width="45vw",
+                            max_width={"initial": "90vw", "md": "45vw"},
+                            width={"initial": "90vw", "md": "45vw"},
                             class_name="rounded-xl shadow-2xl p-4"
                         ),
                     ),

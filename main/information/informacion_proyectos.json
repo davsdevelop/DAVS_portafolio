@@ -93,6 +93,28 @@
         "imagen": "/imagenes/proyectos/sql/DAVS_Wikihorrorbook_data.png"
     },
 
+    "proyecto_datayml_1": {
+        "titulo": "Pipeline ETL Local con AWS Glue 4.0 y PySpark",
+        "descripcion": "Flujo ETL reproducible con la imagen oficial de AWS Glue 4.0 en Docker para procesar telemetría energética industrial sin costos en la nube. Limpia datos crudos en CSV, calcula el consumo eléctrico (kWh), exporta a formato columnar Parquet (Snappy) y valida métricas con Spark SQL.",
+        "link_repositorio": "https://github.com/davsdevelop/aws-glue-etl-telemetria",
+        "link_app": "",
+        "imagen": "/imagenes/proyectos/ETL&ML/awsglue.jpeg"
+    },
+    "proyecto_datayml_2": {
+        "titulo": "ETL Económico: Cobre, Dólar Observado e IPSA (Chile)",
+        "descripcion": "Pipeline ETL modular bajo la metodología Cookiecutter Data Science para preparar series macroeconómicas de Chile. Integra ingesta desde Hugging Face y las APIs del Banco Central de Chile, limpieza de series temporales con Pandas y escritura atómica de tres datasets analíticos en Parquet.",
+        "link_repositorio": "https://github.com/davsdevelop/proyecto_etl_cobre_dolar_chile",
+        "link_app": "",
+        "imagen": "/imagenes/proyectos/ETL&ML/ipsadolarcobre.jpeg"
+    },
+    "proyecto_datayml_3": {
+        "titulo": "ETL Industrial: Mantenimiento Preventivo de Bomba Centrífuga",
+        "descripcion": "Extracción de datos operativos desde PostgreSQL en Docker (SQLAlchemy) y procesamiento modular de cuatro tablas industriales, incluyendo más de 135.000 lecturas de sensores. Resuelve fechas mixtas, limpieza de temperaturas (°C) y documentación de nulos de origen con salida en Parquet.",
+        "link_repositorio": "https://github.com/davsdevelop/proyecto_mantenimiento_preventivo_bomba_centrifuga",
+        "link_app": "",
+        "imagen": "/imagenes/proyectos/ETL&ML/mantenimiento.jpeg"
+    },
+
     "proyecto_nestjs_1": {
         "titulo": "DAVS Terror Book API: Arquitectura Modular con NestJS",
         "descripcion": "Desarrollo del backend y lógica de negocio para el sistema de gestión de una colección literaria. Construido con el framework NestJS bajo el entorno Node.js, el proyecto implementa una rigurosa arquitectura modular basada en el patrón de inyección de dependencias (Controladores, Servicios y Módulos). Expone una API RESTful robusta, utilizando DTOs (Data Transfer Objects) estructurados para la validación tipada de datos en las peticiones entrantes. Destaca por su lógica de paginación en el servidor, algoritmos de búsqueda avanzada con normalización de caracteres, y el manejo eficiente de archivos estáticos para la distribución de los recursos multimedia.",

@@ -6,8 +6,8 @@
         "fecha_fin": "Febrero - 2026",
         "definicion": "",
         "descripcion": [
-            "Desarrollo backend en Python (FastAPI) especializado en la orquestación de agentes de IA y procesamiento de lenguaje natural (NLP)",
-            "Integración de modelos LLM en flujos corporativos implementando arquitecturas RAG, memoria vectorial (ChromaDB) y el estándar Model Context Protocol (MCP)."
+            "Orquesté agentes de IA y procesamiento de lenguaje natural (NLP) mediante microservicios en Python (FastAPI) para un servicio corporativo B2B, logrando aumentar la captación de posibles clientes en un 20%.",
+            "Desarrollé una interfaz de comunicación por voz tipo 'orbe' integrando transcripción de audio a texto para disminuir la fricción de los usuarios que prefieren hablar, diseñando e implementando la solución completa en un ciclo ágil de 1 sprint (2 semanas)."
         ],
         "imagen": "/imagenes/experiencia/Experiencia_laboral_FactoryAI.jpg"
     },
@@ -18,9 +18,9 @@
         "fecha_fin": "Diciembre - 2025",
         "definicion": "",
         "descripcion": [
-            "Analicé, diseñé e implementé soluciones de integración basadas en Apache Camel, bajo una arquitectura orientada a servicios (REST y SOAP) y aplicando Patrones de Integración Empresarial (EIP).",
-            "Gestioné y desarrollé soluciones para la interoperatividad de sistemas legados (RPG) con servicios externos y APIs enAWS, centralizando la comunicación mediante mensajería asíncrona AMQ.",
-            "Creación de microservicios backend escalables (Node.js / NestJS) orientados a la expansión de servicios digitales."
+            "Implementé servicios de integración middleware utilizando Apache Camel y Red Hat JBoss Fuse, eliminando la fricción de comunicación entre las nuevas plataformas digitales y el core bancario on-premise (RPG, DB2) para garantizar un acceso seguro y directo a los datos.",
+            "Lideré la integración del protocolo de pagos seguros 3DS de Mastercard a nivel de middleware (Red Hat JBoss Fuse), reduciendo exitosamente la tasa de error en transacciones a menos del 5%.",
+            "Migré la arquitectura de la plataforma financiera Dale desde un sistema monolítico hacia microservicios utilizando Node.js y NestJS, modernizando el backend para asegurar su escalabilidad y facilitar la expansión de nuevos servicios digitales."
         ],
         "imagen": "/imagenes/experiencia/Experiencia_laboral_coopeuch.jpg"
     },
@@ -31,19 +31,20 @@
         "fecha_fin": "Enero - 2023",
         "definicion": "",
         "descripcion": [
-            "Implementación de patrones de integración empresarial (EIP) para asegurar la transmisión y escalabilidad de datos en sistemas críticos del sector energético."
-        ],
+            "Audité, documenté y centralicé un portafolio de servicios de integración dispersos (Red Hat JBoss Fuse) en un repositorio seguro y versionado, estableciendo gobernanza sobre el código y reduciendo la deuda técnica en un ciclo ágil de 1 sprint (2 semanas).",
+            "Monitoreé y optimicé servicios críticos en producción para el sector energético mediante Patrones de Integración Empresarial (EIP), diagnosticando fallas, aplicando correcciones y ejecutando redespliegues seguros para garantizar la continuidad y estabilidad operativa del sistema."
+        ],      
         "imagen": "/imagenes/experiencia/Experiencia_laboral_transelec.jpg"
     },
     "experiencia_4": {
-        "titulo": "Consultor IoT & Machine Learning",
+        "titulo": "Desarrollador IoT & Machine Learning | Proyectos Independientes",
         "subtitulo": "FREELANCE",
         "fecha_inicio": "Enero - 2020",
         "fecha_fin": "Diciembre - 2022",
         "definicion": "",
         "descripcion": [
-            "Ingesta y preprocesamiento de imágenes para alimentar modelos de Visión Artificial (OpenCV) orientados a la detección automática de mermas agrícolas.",
-            "Diseño de pipelines de datos IoT en tiempo real, conectando sensores a la nube mediante protocolos MQTT."
+            "Desarrollé un sistema de visión artificial en Python con OpenCV para una empresa agroindustrial de arándanos (cranberries), entrenando un modelo con imágenes reales para detectar frutos defectuosos y generar alertas automáticas, sentando las bases para la automatización de su control de calidad.",
+            "Diseñé e implementé una solución IoT para la automatización de un huerto hidropónico, integrando sensores de temperatura/humedad y actuadores para el control de bombas de agua, optimizando el ciclo de riego y asegurando la monitorización continua del cultivo."
         ],
         "imagen": "/imagenes/experiencia/Experiencia_laboral_freelance.jpg"
     },

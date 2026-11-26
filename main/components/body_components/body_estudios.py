@@ -39,7 +39,8 @@ def crear_fila_estudio(datos: dict) -> rx.Component:
                 rx.link(
                     rx.icon("file-badge", size=24, class_name=ESTUDIOS_CARD_ROW_LINK_CERT_ICON),
                     href=link,
-                    is_external=True
+                    is_external=True,
+                    custom_attrs={"aria-label": f"Ver certificado de {datos['titulo']}"},
                 ) for link in links
             ],
             class_name="w-full md:w-[20%] p-2 justify-center md:justify-end gap-2",
@@ -84,7 +85,7 @@ def body_estudios() -> rx.Component:
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_1"]),
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_2"]),
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_3"]),
-                # crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_4"]),
+                crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_4"]),
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_5"]),
                 crear_fila_estudio(INFORMACION_ESTUDIOS["estudio_2_6"]),
   

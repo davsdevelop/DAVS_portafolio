@@ -1,8 +1,12 @@
 .web
 .states
+.venv/
+.env
 *.py[cod]
 assets/external/
 *.db
+*.log
+.DS_Store
 __pycache__/
 
 contexto_proyecto.txt

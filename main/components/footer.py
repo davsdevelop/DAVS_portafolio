@@ -5,7 +5,7 @@ from ..components.style import (FOOTER_BASE, FOOTER_TEXT)
 def footer() -> rx.Component:
     return rx.box(
         rx.text(
-            "Desarrollado por: Diego Videla Silva",
+            "Desarrollado por: Diego Arturo Videla Silva",
             class_name=FOOTER_TEXT
         ),
         rx.text(

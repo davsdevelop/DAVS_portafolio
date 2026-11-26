@@ -22,19 +22,25 @@ with open(RUTA_JSON, "r", encoding="utf-8") as archivo:
 
 
 
-def fila_contacto(elemento_grafico: rx.Component, texto: str, href: str = "#") -> rx.Component:
-    return rx.link(
-        rx.hstack(
-            rx.box(
-                elemento_grafico,
-                class_name=CONTACTO_BOTON_ANIMACION_BASE,
-            ),
-            rx.text(texto, class_name=CONTACTO_TEXTO_LINK),
-            align_items="center",
-            spacing="6", 
+def fila_contacto(elemento_grafico: rx.Component, texto: str, href: str | None = None) -> rx.Component:
+    contenido = rx.hstack(
+        rx.box(
+            elemento_grafico,
+            class_name=CONTACTO_BOTON_ANIMACION_BASE,
         ),
+        rx.text(texto, class_name=CONTACTO_TEXTO_LINK),
+        align_items="center",
+        spacing="4", 
+        max_width="100%",
+    )
+    if not href:
+        return contenido
+    return rx.link(
+        contenido,
         href=href,
-        is_external=True, 
+        is_external=href.startswith("http"), 
+        display="flex",
+        justify_content="flex-start",
         _hover={"text_decoration": "none"} 
     )
 
@@ -47,7 +53,11 @@ def body_contacto() -> rx.Component:
                 rx.vstack(
                     # FOTOGRAFÍA
                     rx.box(
-                        rx.image(src=INFORMACION_PERSONAL["personal"]["fotografia"], class_name=CONTACTO_BODY_FOTO),
+                        rx.image(
+                            src=INFORMACION_PERSONAL["personal"]["fotografia"],
+                            alt=f"Fotografía de {INFORMACION_PERSONAL['personal']['nombre']}",
+                            class_name=CONTACTO_BODY_FOTO,
+                        ),
                         class_name=CONTACTO_BODY_FOTO_BASE
                     ),
                     rx.vstack(
@@ -55,11 +65,17 @@ def body_contacto() -> rx.Component:
                         fila_contacto(
                             elemento_grafico=rx.icon(tag="mail", size=28, class_name=CONTACTO_LOGO_ICON), 
                             texto=INFORMACION_PERSONAL["personal"]["davs_email"], 
+                            href=f"mailto:{INFORMACION_PERSONAL['personal']['davs_email']}",
                         ),
                         # FILA LINKEDIN 
                         fila_contacto(
-                            elemento_grafico=rx.image(src="/logos/linkedin_logo.png", color="#46AC9F", class_name=CONTACTO_LOGO_IMG), 
-                            texto="linkedin/diegovidelasilva", 
+                            elemento_grafico=rx.image(
+                                src="/logos/linkedin_logo.png",
+                                alt="Logo de LinkedIn",
+                                color="#46AC9F",
+                                class_name=CONTACTO_LOGO_IMG,
+                            ), 
+                            texto="linkedin/diegovidela-dev", 
                             href=INFORMACION_PERSONAL["personal"]["linkedin_link"]
                         ),
                         # FILA UBICACION 
@@ -73,10 +89,11 @@ def body_contacto() -> rx.Component:
                             texto="Descargar CV", 
                             href=INFORMACION_PERSONAL["personal"]["CV"],
                         ),
-                        align_items="start", 
                         spacing="0",         
+                        align_items="start",
                     ),
                     align_items="center", 
+                    width="100%",
                 ),
                 class_name=CONTACTO_CARD_BASE,
             ),

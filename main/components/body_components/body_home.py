@@ -17,6 +17,7 @@ from ..style import (
     BODY_HOME_PRESENTACION_TEXTO_CARGO_DETALLE,
     BODY_HOME_PROYECTOS_BASE,
     BODY_HOME_PROYECTOS_TITULO,
+    BODY_HOME_PROYECTOS_GRUPO_TITULO,
     BODY_HOME_PROYECTOS_SEPARATOR, 
     BODY_HOME_PROYECTOS_TECH_NAME_TEXT, 
     BODY_HOME_PROYECTOS_BASE_PROYECTOS,
@@ -81,7 +82,11 @@ def body_home() -> rx.Component:
                         rx.box(
                             # Fotografia
                             rx.box(
-                                rx.image(src=INFORMACION_PERSONAL["personal"]["fotografia"], class_name=BODY_HOME_PRESENTACION_FOTO),
+                                rx.image(
+                                    src=INFORMACION_PERSONAL["personal"]["fotografia"],
+                                    alt=f"Fotografía de {INFORMACION_PERSONAL['personal']['nombre']}",
+                                    class_name=BODY_HOME_PRESENTACION_FOTO,
+                                ),
                                 class_name=BODY_HOME_PRESENTACION_FOTO_BASE
                             ),
                             # Saludo y Nombre
@@ -119,7 +124,10 @@ def body_home() -> rx.Component:
                                     width="100%",
                                 ),
                             ),
-                            rx.text(INFORMACION_PERSONAL["personal"]["descripcion"]),
+                            rx.text(
+                                INFORMACION_PERSONAL["personal"]["descripcion"],
+                                class_name="w-full text-justify",
+                            ),
                             class_name=BODY_HOME_PRESENTACION_TEXTO_BIOGRAFIA
                         ),
                         spacing="0",
@@ -153,10 +161,10 @@ def body_home() -> rx.Component:
                         rx.hstack(
                             # --- COLUMNA 1: DATA SCIENCE & IA ---
                             rx.vstack(
-                                rx.text("DATA SCIENCE & IA", font_weight="bold", margin_bottom="1em", white_space="nowrap"),
+                                rx.text("DATA SCIENCE & IA", class_name=BODY_HOME_PROYECTOS_GRUPO_TITULO),
                                 proyecto_icon_with_separator(img_src="/logos/python_logo.png", href="/proyectospython", technology_name="Python"),
-                                proyecto_icon_with_separator(img_src="/logos/data.png", href="/proyectosdatayml", technology_name="Data y ML"),
-                                proyecto_icon_with_separator(img_src="/logos/langchain_logo.png", href="/proyectoslangchainmcp", technology_name="LangChain/MCP"),
+                                proyecto_icon_with_separator(img_src="/logos/data2.png", href="/proyectosdatayml", technology_name="ETL & ML"),
+                                proyecto_icon_with_separator(img_src="/logos/RAG.png", href="/proyectoslangchainmcp", technology_name="RAG/LangChain/MCP"),
                                 # proyecto_icon_with_separator(img_src="/logos/MCP_logo.png", href="/proyectosmcp", technology_name="MCP"),
                                 proyecto_icon_with_separator(img_src="/logos/sql_logo.png", href="/proyectossql", technology_name="SQL"),
                                 # proyecto_icon_with_separator(img_src="/logos/ML_logo.png", href="/proyectosML", technology_name="Machine Learning"),
@@ -166,7 +174,7 @@ def body_home() -> rx.Component:
                             
                             # --- COLUMNA 2: BACKEND E INTEGRACIÓN ---
                             rx.vstack(
-                                rx.text("BACKEND E INTEGRACIÓN", font_weight="bold", margin_bottom="1em", white_space="nowrap"),
+                                rx.text("BACKEND E INTEGRACIÓN", class_name=BODY_HOME_PROYECTOS_GRUPO_TITULO),
                                 # proyecto_icon_with_separator(img_src="/logos/python_logo.png", href="/proyectospython", technology_name="Python"),
                                 proyecto_icon_with_separator(img_src="/logos/fuse.png", href="/proyectosapachecamel", technology_name="APACHE CAMEL - FUSE"),
                                 proyecto_icon_with_separator(img_src="/logos/fastapi_logo.png", href="/proyectosfastapi", technology_name="FastAPI"),
@@ -178,7 +186,7 @@ def body_home() -> rx.Component:
                                 align_items="center", 
                             ),
 
-                            gap="6rem", 
+                            class_name="gap-3 md:gap-8 lg:gap-6 xl:gap-24",
                             justify_content="center", 
                             width="100%",
                             align_items="start", 

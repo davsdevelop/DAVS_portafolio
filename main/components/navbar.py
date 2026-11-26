@@ -20,8 +20,8 @@ def navbar(show_home: bool = True) -> rx.Component:
                     rx.menu.content(
                         # --- Proyectos visibles en Home ---
                         rx.menu.item(rx.link("Python", href="/proyectospython", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        rx.menu.item(rx.link("Data y ML", href="/proyectosdatayml", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        rx.menu.item(rx.link("LangChain/MCP", href="/proyectoslangchainmcp", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        rx.menu.item(rx.link("ETL & ML", href="/proyectosdatayml", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        rx.menu.item(rx.link("RAG/LangChain/MCP", href="/proyectoslangchainmcp", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
                         rx.menu.item(rx.link("SQL", href="/proyectossql", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
                         rx.menu.item(rx.link("Apache Camel - Fuse", href="/proyectosapachecamel", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
                         rx.menu.item(rx.link("FastAPI", href="/proyectosfastapi", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
@@ -57,8 +57,8 @@ def navbar(show_home: bool = True) -> rx.Component:
                         rx.menu.item(rx.text("Proyectos:", class_name="text-davs-color-cian font-bold text-sm outline-none"), class_name="outline-none"),
                         # --- Proyectos visibles en Home ---
                         rx.menu.item(rx.link("• Python", href="/proyectospython", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        rx.menu.item(rx.link("• Data y ML", href="/proyectosdatayml", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
-                        rx.menu.item(rx.link("• LangChain/MCP", href="/proyectoslangchainmcp", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        rx.menu.item(rx.link("• ETL & ML", href="/proyectosdatayml", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
+                        rx.menu.item(rx.link("• RAG/LangChain/MCP", href="/proyectoslangchainmcp", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
                         rx.menu.item(rx.link("• SQL", href="/proyectossql", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
                         rx.menu.item(rx.link("• Apache Camel - Fuse", href="/proyectosapachecamel", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
                         rx.menu.item(rx.link("• FastAPI", href="/proyectosfastapi", class_name=NAVBAR_MENU_LINK), class_name=NAVBAR_MENU_ITEM),
