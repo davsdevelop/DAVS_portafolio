@@ -35,10 +35,11 @@ def fila_contacto(elemento_grafico: rx.Component, texto: str, href: str | None =
     )
     if not href:
         return contenido
+    es_archivo = href.startswith(("/documentos/", "/videos/", "/imagenes/"))
     return rx.link(
         contenido,
         href=href,
-        is_external=href.startswith("http"), 
+        is_external=href.startswith("http") or es_archivo,
         display="flex",
         justify_content="flex-start",
         _hover={"text_decoration": "none"} 
